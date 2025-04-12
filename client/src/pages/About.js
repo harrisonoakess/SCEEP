@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 
-import LaurieBrimhall from "../assets/images/aboutPageProfiles/LaurieBrimhall.jpg"
+import LaurieBrimhall from "../assets/images/aboutPageProfiles/LaurieBrimhall1.jpg"
 import JayOhaco from "../assets/images/aboutPageProfiles/JayOhaco.jpg"
 import LexiGardner from "../assets/images/aboutPageProfiles/LexiGardner.jpg"
 
