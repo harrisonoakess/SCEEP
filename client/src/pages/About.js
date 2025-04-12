@@ -17,7 +17,10 @@ const About = () => {
     {
       name: 'Jay Ohaco',
       role: 'Riding Instructor',
-      bio: 'Bio goes here',
+      bio: `Jay was born in England and raised in Santa Monica, California. For 10 years she learned and worked for a British Horse Society riding instructor. She has many 
+            years of Eventing experience and has worked for several Grand Prix dressage riders.  A difficult horse brought her to Ray Hunt, Buck Brannaman, and Bryan Neubert. 
+            She has ridden and taught full-time for over 30 years, has an eclectic, easy approach, and is teaching English and Western lessons. Jay and her husband, Jeff, 
+            moved to Snowflake a few years ago and love the people and families in this area! We are so happy to have her in our program!`,
       photo: JayOhaco
     },
     {
