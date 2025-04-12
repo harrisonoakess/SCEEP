@@ -11,7 +11,6 @@ import picture3 from '../assets/images/homePageCarousel/sceep3.jpg'
 import picture4 from '../assets/images/homePageCarousel/sceep4.jpg'
 import picture5 from '../assets/images/homePageCarousel/sceep5.jpg'
 import picture6 from '../assets/images/homePageCarousel/sceep6.jpg'
-import picture7 from '../assets/images/homePageCarousel/sceep7.jpg'
 
 
 const Home = () => {
@@ -36,7 +35,6 @@ const Home = () => {
     picture4,
     picture5,
     picture6,
-    picture7,
   ];
 
   return (
