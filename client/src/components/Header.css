@@ -1,0 +1,101 @@
+/* Existing styles (unchanged) */
+.header {
+  background-color: #4a2c2a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.header-content p {
+  margin: 5px 0 15px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-menu li {
+  display: inline;
+  position: relative; /* Needed for dropdown positioning */
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #d4a373;
+}
+
+/* New styles for the dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  color: #d4a373;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position below the "Programs" link */
+  left: 50%;
+  transform: translateX(-50%); /* Center the dropdown */
+  background-color: #4a2c2a; /* Match header background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 0;
+  min-width: 250px; /* Ensure enough width for longer program names */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu a {
+  display: block; /* Stack the links vertically */
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.dropdown-menu a:hover {
+  background-color: #5a3c3a; /* Slightly lighter brown for hover effect */
+  color: #d4a373;
+}
