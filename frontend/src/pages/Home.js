@@ -49,8 +49,30 @@ const Home = () => {
           ))}
         </Slider>
       </section>
+      
+      <section className='story-section'>
+        <h2>The Story of Silver Creek Equestrian Program</h2>
+          <p>
+          Silver Creek Equestrian Education Program (SCEEP) was founded in 2011 by Laurie Brimhall 
+          in Snowflake, Arizona, with a mission to bring the joy of horsemanship to children and families 
+          in the community. Laurie always dreamed of creating a space where kids could learn to ride, 
+          care for horses, and build confidence through hands-on experiences. What started as a small 
+          summer horse camp has developed into a thriving equestrian education program, offering several 
+          activities such as homeschool classes, riding lessons, summer camps, and Day at the Farm with 
+          Horses. Today, SCEEP continues to foster a love for horses while teaching valuable life skills 
+          such as responsibility, teamwork, and perseverance.          </p>
+      </section>
+
+      <section className="mission-section">
+        <h2>Our Mission</h2>
+        <p>
+          Silver Creek Equestrian Education Program aims to cultivate confident, compassionate, and knowledgeable horsemen and horsewomen through hands-on learning, comprehensive horsemanship education, and a joyful connection with horses. We are dedicated to providing a safe, inclusive, and engaging environment where students of all ages can grow, not only as riders but as stewards of equine care and lifelong learners in the world of horsemanship.
+        </p>
+      </section>
+      
     </div>
   );
 };
+
 
 export default Home;

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Programs.css';
 
-const ProgramSection = ({ id, title, description, dates, whatToBring, imageLeft, imageRight }) => (
+const ProgramSection = ({ id, title, tagline, description, dates, whatToBring, imageLeft, imageRight }) => (
   <section id={id} className="program-section">
     <div className="program-content">
       {imageLeft && (
@@ -11,6 +11,7 @@ const ProgramSection = ({ id, title, description, dates, whatToBring, imageLeft,
       )}
       <div className="program-details">
         <h2>{title}</h2>
+        {tagline && <p className="program-tagline">{tagline}</p>}
         <p>{description}</p>
         {dates && (
           <>
@@ -55,46 +56,89 @@ const Programs = () => {
 
   return (
     <div className="programs-page">
-      <ProgramSection
-        id="homeschool-horsemanship"
-        title="Homeschool Horsemanship"
-        description="Basic horse skills, horse care, and hands-on working with horses (non-riding class)."
-        dates={[
-          "Horse Class: Mondays, 10:30–12 ($100 per month – meets 4 times)",
-          "Pony Class: Tuesdays, 10:30–12 ($50 per month – meets 2 times)",
-        ]}
-      />
+      <div className="esa-note">
+        <p><strong>Note:</strong> ESA accepted for all programs.</p>
+      </div>
 
       <ProgramSection
-        id="private-horsemanship"
-        title="Private Horsemanship/Riding Lessons"
-        description="Offered during the day based on availability."
+        id="homeschool-horse-class"
+        title="Homeschool Horse Class"
+        tagline="Saddle up and start your horse journey—fun for all ages!"
+        description="Our Homeschool Horse Class is a hands-on, unmounted learning experience designed for homeschool students who love horses! Meeting four times per month for 1.5 hours, this class focuses on equine science, horse care, safety, equipment, behavior, and the basics of horsemanship. It's a great way for students to build knowledge, responsibility, and confidence while learning alongside fellow horse enthusiasts in a fun, educational setting."
+        dates={[
+          "Meets 4 times per month, 1.5 hours per session",
+          "Contact us for current schedule and pricing",
+        ]}
+        whatToBring={[
+          "Comfortable clothing suitable for working with horses",
+          "Closed-toe shoes",
+          "Water bottle",
+        ]}
+        // imageLeft="/assets/images/homeschool-horse-class-left.jpg"
+        // imageRight="/assets/images/homeschool-horse-class-right.jpg"
       />
 
       <ProgramSection
         id="day-at-the-farm"
         title="Day at the Farm with Horses"
-        description="This three-hour program is offered two Saturdays each month and includes group riding lessons, hands-on horse care, and confidence-building activities. Geared for ages 9 and older."
+        tagline="Saddle up and start your horse journey—fun for all ages!"
+        description="Spend a fun-filled 3 hours at the farm getting to know our amazing horses! This hands-on experience includes a riding lesson, horse care activities, and plenty of time to connect with the animals in a relaxed, supportive environment. Whether you're new to horses or just want more time in the barn, 'Day at the Farm' is a perfect way to learn, explore, and enjoy the magic of horses."
         dates={[
-          "Saturdays: April 5, April 12, May 3, May 10",
-          "11:00–2:00 pm ($50 per day)",
+          "Contact us for current schedule",
+          "3 hours per session ($50 per day)",
         ]}
+        whatToBring={[
+          "Long pants (jeans recommended)",
+          "Closed-toe shoes (boots preferred)",
+          "Water bottle",
+          "Sunscreen and hat",
+        ]}
+        // imageLeft="/assets/images/day-at-the-farm-left.jpg"
+        // imageRight="/assets/images/day-at-the-farm-right.jpg"
       />
 
       <ProgramSection
         id="saddle-club"
         title="Saddle Club"
-        description="Similar to Day at the Farm but geared towards ages 5–8 (older ages are welcome as well!)."
+        tagline="Saddle up and start your horse journey—fun for all ages!"
+        description="Saddle Club is the perfect introduction to the world of horses for kids ages 5-8, though older children are always welcome to join the fun! In this 2-hour class, young riders will enjoy a mix of unmounted activities, horse care, and beginner riding lessons. It’s all about building confidence, learning basic horsemanship skills, and having fun with horses in a safe and supportive environment. Each session is designed to engage children educationally and enjoyably!"
         dates={[
-          "Friday, April 11 from 3–5 pm ($50)",
-          "Friday, May 2 from 3–5 pm ($50)",
+          "Contact us for current schedule",
+          "2 hours per session ($50 per session)",
         ]}
+        whatToBring={[
+          "Long pants (jeans recommended)",
+          "Closed-toe shoes (boots preferred)",
+          "Water bottle",
+          "Sunscreen and hat",
+        ]}
+        // imageLeft="/assets/images/saddle-club-left.jpg"
+        // imageRight="/assets/images/saddle-club-right.jpg"
+      />
+
+      <ProgramSection
+        id="private-horsemanship"
+        title="Private Horsemanship Lessons"
+        tagline="One-on-one horsemanship—your goals, your pace."
+        description="Our Private Horsemanship Lessons offer one-on-one instruction tailored to each rider’s goals, experience level, and learning style. Whether you're just starting or looking to refine your skills, these personalized sessions focus on both riding and ground-based horsemanship. Lessons are available using your horse or one of our well-trained school horses. Build confidence, improve communication, and deepen your partnership with horses in a supportive and encouraging environment."
+        dates={[
+          "Scheduled based on availability",
+          "Contact us for pricing",
+        ]}
+        whatToBring={[
+          "Long pants (jeans recommended)",
+          "Closed-toe shoes (boots preferred)",
+          "Water bottle",
+        ]}
+        // imageLeft="/assets/images/private-horsemanship-left.jpg"
+        // imageRight="/assets/images/private-horsemanship-right.jpg"
       />
 
       <ProgramSection
         id="summer-horse-camp"
         title="Summer Horse Camp"
-        description="Join us for an exciting Summer Horse Camp with three sessions in June! Choose between morning, afternoon, or full-day options."
+        tagline="Learn, Ride, Grow."
+        description="Join us for an unforgettable time at the Silver Creek Equestrian Education Program’s Summer Horse Camp! Open to riders of all levels, our camp offers hands-on horse care, daily riding lessons, barn activities, and fun team games—all in a safe, supportive, and encouraging environment. Campers build confidence, develop horsemanship skills, and make lasting friendships while learning the true meaning of partnership with horses. Whether new to riding or growing your skills, this is the place to be this summer! Instructors: Laurie Brimhall, Jay Ohaco, Sedona Forbis, Kyri Wood, Dirt Road Riders."
         dates={[
           "Session 1: June 9–11",
           "Session 2: June 16–18",
@@ -102,7 +146,6 @@ const Programs = () => {
           "Morning Camp: 7:30–11:30 ($150)",
           "Afternoon Camp: 1:00–5:00 ($150)",
           "Full Day Camp: 7:30–5:00 ($340)",
-          "ESA Accepted",
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
@@ -112,9 +155,66 @@ const Programs = () => {
           "Snacks (for morning/afternoon sessions) or lunch (for full-day sessions)",
           "A positive attitude!",
         ]}
-        // Placeholder image paths (replace with actual images)
-        // imageLeft="/path/to/summer-horse-camp-left.jpg"
-        // imageRight="/path/to/summer-horse-camp-right.jpg"
+        // imageLeft="/assets/images/summer-horse-camp-left.jpg"
+        // imageRight="/assets/images/summer-horse-camp-right.jpg"
+      />
+
+      <ProgramSection
+        id="pony-pals"
+        title="Pony Pals"
+        tagline="Pony Pals — Ride, learn, and explore with friends!"
+        description="Pony Pals is a fun and friendly after-school riding group for young horse lovers! Meeting two days a week, Pony Pals enjoy a group riding lesson one day and head out for a trail ride the next. It’s a great way for kids to build riding skills, grow their confidence, and spend time with friends in a safe and supportive environment."
+        dates={[
+          "Meets 2 days per week",
+          "Contact us for current schedule and pricing",
+        ]}
+        whatToBring={[
+          "Long pants (jeans recommended)",
+          "Closed-toe shoes (boots preferred)",
+          "Water bottle",
+          "Sunscreen and hat",
+        ]}
+        // imageLeft="/assets/images/pony-pals-left.jpg"
+        // imageRight="/assets/images/pony-pals-right.jpg"
+      />
+
+      <ProgramSection
+        id="horse-lease-program"
+        title="Horse Lease Program"
+        tagline="Grow your skills. Deepen your connection. Lease a horse today."
+        description="Our Partial Horse Lease Program allows riders to care for and ride their own horse, without the full-time commitment of ownership. Riders enjoy two days per week of supervised time with horses (2 hours each day), with one of those days including a group lesson to continue building riding skills. Participants also take part in caring for their leased horse, learning responsibility, horsemanship, and the joy of developing a true horse-human partnership."
+        dates={[
+          "2 days per week, 2 hours per day",
+          "Contact us for pricing and availability",
+        ]}
+        whatToBring={[
+          "Long pants (jeans recommended)",
+          "Closed-toe shoes (boots preferred)",
+          "Water bottle",
+        ]}
+        // imageLeft="/assets/images/horse-lease-program-left.jpg"
+        // imageRight="/assets/images/horse-lease-program-right.jpg"
+      />
+
+      <ProgramSection
+        id="dirt-road-riders"
+        title="Dirt Road Riders"
+        tagline="Dirt Road Riders: Learning, leading, lifting each other."
+        description="Dirt Road Riders is a team of dedicated youth who support and encourage fellow students on their horsemanship journey. Many of our members participate actively in the horse 4-H program and bring valuable experience, leadership, and a passion for helping others learn and grow. Whether lending a hand in the barn, guiding new riders, or leading by example in the arena, Dirt Road Riders are committed to building a strong, supportive, and fun equestrian community."
+        // imageLeft="/assets/images/dirt-road-riders-left.jpg"
+        // imageRight="/assets/images/dirt-road-riders-right.jpg"
+      />
+
+      <ProgramSection
+        id="equine-apprenticeship"
+        title="Equine Apprenticeship Program"
+        tagline="Train hard. Care deeply. Ride smart."
+        description="The Silver Creek Equine Apprenticeship Program will develop the next generation of horse professionals and passionate equestrians through immersive, hands-on experience. Participants gain in-depth education in all facets of horsemanship—including riding, horse care, stable management, and leadership—within a real-world, supportive learning environment. The program fosters responsibility, confidence, and a lifelong commitment to growth and excellence in equine care."
+        dates={[
+          "Contact us for program details and application process",
+        ]}
+        // imageLeft="/assets/images/equine-apprenticeship-left.jpg"
+        // imageRight="/assets/images/equine-apprenticeship-right.jpg"
       />
     </div>
   );

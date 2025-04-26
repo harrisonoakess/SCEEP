@@ -1,28 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Programs from './pages/Programs';
+import Footer from './components/Footer';
 import Home from './pages/Home';
+import Programs from './pages/Programs';
 import About from './pages/About';
-
-// Placeholder components for each page
-const WhatToBring = () => <div><h2>What to Bring Page</h2><p>List of items to bring.</p></div>;
-const Contact = () => <div><h2>Contact Us Page</h2><p>Contact Silver Creek Equestrian Education.</p></div>;
-
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/what-to-bring" element={<WhatToBring />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

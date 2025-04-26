@@ -1,64 +1,120 @@
 .home-page {
-    font-family: Arial, sans-serif;
-  }
-  
-  .carousel-section {
-    max-width: 1200px;
-    margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the carousel slides */
+.carousel-slide img {
+  width: 100%;
+  height: 500px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the arrows */
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure arrows are above the images */
+  width: 40px;
+  height: 40px;
+  background-color: rgba(74, 44, 42, 0.7); /* Brown with opacity */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #4a2c2a; /* Solid brown on hover */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: white;
+}
+
+/* Position the arrows */
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+/* Style the dots */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #d4a373; /* Light tan for inactive dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4a2c2a; /* Brown for active dot */
+}
+
+/* Ensure the carousel container doesn't overflow */
+.slick-slider {
+  position: relative;
+}
+
+/* Story Section */
+.story-section {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.story-section h2 {
+  color: #4a2c2a;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.story-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Mission Section */
+.mission-section {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.mission-section h2 {
+  color: #4a2c2a;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .story-section,
+  .mission-section {
     padding: 20px;
   }
-  
-  /* Style the carousel slides */
-  .carousel-slide img {
-    width: 100%;
-    height: 500px; /* Fixed height for consistency */
-    object-fit: cover; /* Ensure images cover the area without distortion */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Style the arrows */
-  .slick-prev,
-  .slick-next {
-    z-index: 1; /* Ensure arrows are above the images */
-    width: 40px;
-    height: 40px;
-    background-color: rgba(74, 44, 42, 0.7); /* Brown with opacity */
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .slick-prev:hover,
-  .slick-next:hover {
-    background-color: #4a2c2a; /* Solid brown on hover */
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 24px;
-    color: white;
-  }
-  
-  /* Position the arrows */
-  .slick-prev {
-    left: 20px;
-  }
-  
-  .slick-next {
-    right: 20px;
-  }
-  
-  /* Style the dots */
-  .slick-dots li button:before {
-    font-size: 12px;
-    color: #d4a373; /* Light tan for inactive dots */
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: #4a2c2a; /* Brown for active dot */
-  }
-  
-  /* Ensure the carousel container doesn't overflow */
-  .slick-slider {
-    position: relative;
-  }
+}

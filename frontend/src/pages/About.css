@@ -1,109 +1,107 @@
 .about-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Staff Section */
-  .staff-section {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  .staff-section h2 {
-    color: #4a2c2a; /* Match the header brown */
-    font-family: 'Georgia', serif;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Staff Section */
+.staff-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.staff-section h2 {
+  color: #4a2c2a; /* Match the header brown */
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Dirt Road Riders Section */
+.dirt-road-riders-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.dirt-road-riders-section h2 {
+  color: #4a2c2a;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Horses Section */
+.horses-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.horses-section h2 {
+  color: #4a2c2a;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.staff-card {
+  background-color: #f9f9f9; /* Neutral background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover for a subtle effect */
+}
+
+.staff-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular photo */
+  object-fit: cover; /* Ensure the photo fits well */
+  margin-bottom: 15px;
+  border: 3px solid #d4a373; /* Light tan border */
+}
+
+.staff-card h3 {
+  color: #4a2c2a;
+  font-size: 1.5rem;
+  margin: 0 0 5px;
+}
+
+.staff-role {
+  color: #d4a373; /* Light tan for the role */
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+.staff-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .staff-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .staff-card {
-    background-color: #f9f9f9; /* Neutral background */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 350px;
   }
-  
-  .staff-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover for a subtle effect */
-  }
-  
-  .staff-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Circular photo */
-    object-fit: cover; /* Ensure the photo fits well */
-    margin-bottom: 15px;
-    border: 3px solid #d4a373; /* Light tan border */
-  }
-  
-  .staff-card h3 {
-    color: #4a2c2a;
-    font-size: 1.5rem;
-    margin: 0 0 5px;
-  }
-  
-  .staff-role {
-    color: #d4a373; /* Light tan for the role */
-    font-style: italic;
-    font-size: 1.1rem;
-    margin: 0 0 10px;
-  }
-  
-  .staff-bio {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* Story Section */
-  .story-section {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .story-section h2 {
-    color: #4a2c2a;
-    font-family: 'Georgia', serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .story-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .staff-list {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .staff-card {
-      width: 100%;
-      max-width: 350px;
-    }
-  
-    .story-section {
-      padding: 20px;
-    }
-  }
+}
