@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import waiverDoc from '../assets/waivers/RELEASE AND WAIVER OF LIABILITY.docx.pdf'
 import './Programs.css';
 
 const ProgramSection = ({ id, title, tagline, description, dates, whatToBring, imageLeft, imageRight }) => (
@@ -137,27 +138,46 @@ const Programs = () => {
       <ProgramSection
         id="summer-horse-camp"
         title="Summer Horse Camp"
-        tagline="Learn, Ride, Grow."
-        description="Join us for an unforgettable time at the Silver Creek Equestrian Education Program’s Summer Horse Camp! Open to riders of all levels, our camp offers hands-on horse care, daily riding lessons, barn activities, and fun team games—all in a safe, supportive, and encouraging environment. Campers build confidence, develop horsemanship skills, and make lasting friendships while learning the true meaning of partnership with horses. Whether new to riding or growing your skills, this is the place to be this summer! Instructors: Laurie Brimhall, Jay Ohaco, Sedona Forbis, Kyri Wood, Dirt Road Riders."
-        dates={[
-          "Session 1: June 9–11",
-          "Session 2: June 16–18",
-          "Session 3: June 23–25",
-          "Morning Camp: 7:30–11:30 ($150)",
-          "Afternoon Camp: 1:00–5:00 ($150)",
-          "Full Day Camp: 7:30–5:00 ($340)",
-        ]}
-        whatToBring={[
-          "Long pants (jeans recommended)",
-          "Closed-toe shoes (boots preferred)",
-          "Water bottle",
-          "Sunscreen and hat",
-          "Snacks (for morning/afternoon sessions) or lunch (for full-day sessions)",
-          "A positive attitude!",
-        ]}
-        // imageLeft="/assets/images/summer-horse-camp-left.jpg"
-        // imageRight="/assets/images/summer-horse-camp-right.jpg"
-      />
+        tagline="Learn, Ride, Grow — Payment due by May 31"
+        description={
+          <>
+            Join us for an unforgettable time at the Silver Creek Equestrian Education Program’s Summer Horse Camp! Open to riders of all levels, our camp offers hands-on horse care, daily riding lessons, barn activities, and fun team games—all in a safe, supportive environment.  
+            <br/><br/>
+            <strong>Camp will run rain, shine, or wind. </strong>  
+            <a href={waiverDoc} download>Waiver</a> must be signed before participation — print your texted liability waiver or pick one up on the first day.  
+            <br/><br/>
+            Contact Laurie Brimhall if you need a receipt, ESA credentials, or more info. Follow us on{' '}
+            <a
+              href="https://www.facebook.com/profile.php?id=61563387476926"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>{' '}
+            for updates!
+      </>
+  }
+  dates={[
+    "Session 1: June 9–11",
+    "Session 2: June 16–18",
+    "Session 3: June 23–25",
+    "Morning Camp: 7:30–11:30 ($150)",
+    "Afternoon Camp: 1:00–5:00 ($150)",
+    "Full Day Camp: 7:30–5:00 ($340)",
+    "Payment due by May 31"
+  ]}
+  whatToBring={[
+    "Lunch (for full-day campers)",
+    "Snacks (for morning/afternoon campers)",
+    "Water bottle",
+    "Completed liability waiver",
+    "Long pants for riding",
+    "Boots with a heel (if you can)",
+    "Hat",
+    "Sun block",
+    "Please label everything!"
+  ]}
+/>
 
       <ProgramSection
         id="pony-pals"
