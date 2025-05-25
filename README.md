@@ -1,4 +1,4 @@
-# SQEEP
+# SCEEP
 Silver Creek Equestrian Education website
 
 
