@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Programs from './pages/Programs';
 import About from './pages/About';
+import HomeschoolPrograms from './pages/HomeschoolPrograms';
+
 import './App.css';
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/homeschool-programs" element={<HomeschoolPrograms />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />

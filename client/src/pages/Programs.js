@@ -98,7 +98,7 @@ const Programs = () => {
         // imageRight="/assets/images/day-at-the-farm-right.jpg"
       />
 
-      <ProgramSection
+      {/* <ProgramSection
         id="saddle-club"
         title="Saddle Club"
         tagline="Saddle up and start your horse journey—fun for all ages!"
@@ -115,7 +115,7 @@ const Programs = () => {
         ]}
         // imageLeft="/assets/images/saddle-club-left.jpg"
         // imageRight="/assets/images/saddle-club-right.jpg"
-      />
+      /> */}
 
       <ProgramSection
         id="private-horsemanship"
@@ -198,7 +198,7 @@ const Programs = () => {
         // imageRight="/assets/images/pony-pals-right.jpg"
       />
 
-      <ProgramSection
+      {/* <ProgramSection
         id="horse-lease-program"
         title="Horse Lease Program"
         tagline="Grow your skills. Deepen your connection. Lease a horse today."
@@ -214,7 +214,7 @@ const Programs = () => {
         ]}
         // imageLeft="/assets/images/horse-lease-program-left.jpg"
         // imageRight="/assets/images/horse-lease-program-right.jpg"
-      />
+      /> */}
 
       <ProgramSection
         id="dirt-road-riders"

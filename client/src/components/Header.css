@@ -51,16 +51,19 @@
   color: #d4a373;
 }
 
-/* New styles for the dropdown */
+/* Dropdown container */
 .dropdown {
   position: relative;
 }
 
+/* The hoverable part */
 .dropdown-toggle {
+  display: block;
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
+  padding: 10px 0;
   transition: color 0.3s ease;
 }
 
@@ -68,34 +71,39 @@
   color: #d4a373;
 }
 
+/* The hidden dropdown */
 .dropdown-menu {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
-  top: 100%; /* Position below the "Programs" link */
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%); /* Center the dropdown */
-  background-color: #4a2c2a; /* Match header background */
+  transform: translateX(-50%);
+  background-color: #4a2c2a;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px 0;
-  min-width: 250px; /* Ensure enough width for longer program names */
-  z-index: 1000; /* Ensure it appears above other elements */
+  min-width: 250px;
+  z-index: 1000;
 }
 
+/* Show the dropdown on hover of the parent li */
 .dropdown:hover .dropdown-menu {
-  display: block; /* Show dropdown on hover */
+  display: block;
 }
 
 .dropdown-menu a {
-  display: block; /* Stack the links vertically */
+  display: block;
   padding: 10px 20px;
   color: white;
   text-align: center;
   font-size: 1rem;
   font-weight: normal;
+  text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-  background-color: #5a3c3a; /* Slightly lighter brown for hover effect */
+  background-color: #5a3c3a;
   color: #d4a373;
 }
+
+

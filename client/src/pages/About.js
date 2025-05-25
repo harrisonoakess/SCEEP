@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './About.css';
 
 import LaurieBrimhall from '../assets/images/aboutPageProfiles/laurieBrimhall1.jpg';
 import JayOhaco from '../assets/images/aboutPageProfiles/jayOhaco.jpg';
 import LexiGardner from '../assets/images/aboutPageProfiles/lexiGardner1.jpg';
-// Placeholder imports for new team members and horses (replace with actual images)
 import SedonaForbis from '../assets/images/aboutPageProfiles/sedonaForbis.jpg';
 import KyriWood from '../assets/images/aboutPageProfiles/kyriWood.png';
 import ClaireHall from '../assets/images/aboutPageProfiles/claireHall.png';
@@ -21,7 +21,19 @@ import Duke from '../assets/images/aboutPageProfiles/duke.jpg';
 import Maverick from '../assets/images/aboutPageProfiles/maverick.jpg';
 
 const About = () => {
-  // Team Data (Main Instructors)
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    }
+  }, [location]);
+
   const team = [
     {
       name: 'Laurie Brimhall',
@@ -147,7 +159,7 @@ const About = () => {
   return (
     <div className="about-page">
       {/* Team Section */}
-      <section className="staff-section">
+      <section className="staff-section" id="meet-the-team">
         <h2>Meet Our Team</h2>
         <div className="staff-list">
           {team.map((member, index) => (
@@ -177,7 +189,7 @@ const About = () => {
       </section>
 
       {/* Horses Section */}
-      <section className="horses-section">
+      <section className="horses-section" id="meet-the-horses">
         <h2>Meet the Horses</h2>
         <div className="staff-list">
           {horses.map((horse, index) => (
