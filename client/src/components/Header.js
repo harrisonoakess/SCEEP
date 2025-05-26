@@ -29,7 +29,7 @@ function Header() {
 
             {/* Homeschool Programs Dropdown */}
             <li className="dropdown">
-              <span className="dropdown-toggle">Homeschool Programs</span>
+              <span className="dropdown-toggle">Homeschool Activities</span>
               <div className="dropdown-menu">
                 <Link to="/homeschool-programs#homeschool-horse-class">Homeschool Horse Class</Link>
                 <Link to="/homeschool-programs#homeschool-pony-pals">Homeschool Pony Pals</Link>

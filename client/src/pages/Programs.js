@@ -158,9 +158,9 @@ const Programs = () => {
       </>
   }
   dates={[
-    "Session 1: June 9–11",
-    "Session 2: June 16–18",
-    "Session 3: June 23–25",
+    "Session 1: June 9–11 (currently full)",
+    "Session 2: June 16–18 (currently full)",
+    "Session 3: June 23–25 (currently full)",
     "Morning Camp: 7:30–11:30 ($150)",
     "Afternoon Camp: 1:00–5:00 ($150)",
     "Full Day Camp: 7:30–5:00 ($340)",
@@ -183,16 +183,22 @@ const Programs = () => {
         id="pony-pals"
         title="Pony Pals"
         tagline="Pony Pals — Ride, learn, and explore with friends!"
-        description="Pony Pals is a fun and friendly after-school riding group for young horse lovers! Meeting two days a week, Pony Pals enjoy a group riding lesson one day and head out for a trail ride the next. It’s a great way for kids to build riding skills, grow their confidence, and spend time with friends in a safe and supportive environment."
+        description="Pony Pals is a fun and educational program that meets four hours per week, typically
+                    divided into two weekly sessions. This is a perfect program for young horse lovers who
+                    want to deepen their understanding and skills. Each participant is assigned their own
+                    horse to care for and ride during the session. Activities include both mounted and
+                    unmounted learning including riding lessons, trail rides, grooming, feeding, stall
+                    cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a
+                    strong bond between rider and horse in a supportive and hands-on environment."
         dates={[
-          "Meets 2 days per week",
-          "Contact us for current schedule and pricing",
+          "Tuesdays and Thursdays from 4:00pm - 6:00pm (currently full)",
+          "$300 per month",
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
           "Closed-toe shoes (boots preferred)",
           "Water bottle",
-          "Sunscreen and hat",
+          "Dress for the weather",
         ]}
         // imageLeft="/assets/images/pony-pals-left.jpg"
         // imageRight="/assets/images/pony-pals-right.jpg"
