@@ -34,9 +34,9 @@ function Footer() {
         </div>
         <div className="footer-section contact">
           <h3>Contact Us</h3>
-          <p>Email: info@silvercreekequestrian.com</p>
-          <p>Phone: (928) 555-1234</p>
-          <p>Address: 123 Equestrian Lane, Snowflake, AZ 85937</p>
+          <p>Email: sceep2025@gmail.com</p>
+          <p>Phone: (480) 518-5662</p>
+          <p>Address: 160 S. 9th St. E., Snowflake, AZ 85937</p>
         </div>
       </div>
       <div className="footer-bottom">
