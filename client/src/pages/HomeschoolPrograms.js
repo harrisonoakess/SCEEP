@@ -58,12 +58,15 @@ const HomeschoolPrograms = () => {
                     responsibility, and confidence while learning alongside fellow horse enthusiasts in 
                     a fun, educational setting."
         dates={[
-            "Tuesdays & Thursdays 4:00-6:00 pm",
-            "$300 per month"
+          "Tuesdays 10:30 am - 12:00 pm",
+          "8/5/25 - 12/16/25",
+          "20 classes",
+          "$750 (payment plans available)",
+          "limited availability",
         ]}
         whatToBring={[
           "Closed-toe shoes",
-          "Comfortable clothes",
+          "Dress for the weather",
           "Water bottle"
         ]}
       />
@@ -81,22 +84,22 @@ const HomeschoolPrograms = () => {
                     horse in a supportive and hands-on environment."
         dates={[
           "Mondays 10:30-12:30 pm",
-          "8/4/25 - 12/15/25",
-          "20 classes",
-          "$750 (payment plans available)",
+          "August - May",
+          "4 classes per month",
+          "$150 per month",
           "limited availability",
 
-          "Wednesays 10:30-12:30 pm",
-          "8/6/25 - 12/17/25",
-          "20 classes",
-          "$750 (payment plans available)",
+          "Wednesday 10:30-12:30 pm",
+          "August - May",
+          "4 classes per month",
+          "$150 per month",
           "limited availability",
-
         ]}
         whatToBring={[
           "Long pants",
           "Closed-toe shoes or boots",
-          "Water bottle"
+          "Water bottle",
+          "Dress for the weather",
         ]}
       />
     </div>

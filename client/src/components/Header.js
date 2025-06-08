@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <h1>Silver Creek Equestrian Education</h1>
+        <h1>Silver Creek Equestrian Education Program</h1>
         <p>Snowflake, Arizona</p>
         <nav className="nav-menu">
           <ul>

@@ -62,30 +62,12 @@ const Programs = () => {
       </div>
 
       <ProgramSection
-        id="homeschool-horse-class"
-        title="Homeschool Horse Class"
-        tagline="Saddle up and start your horse journey—fun for all ages!"
-        description="Our Homeschool Horse Class is a hands-on, unmounted learning experience designed for homeschool students who love horses! Meeting four times per month for 1.5 hours, this class focuses on equine science, horse care, safety, equipment, behavior, and the basics of horsemanship. It's a great way for students to build knowledge, responsibility, and confidence while learning alongside fellow horse enthusiasts in a fun, educational setting."
-        dates={[
-          "Meets 4 times per month, 1.5 hours per session",
-          "Contact us for current schedule and pricing",
-        ]}
-        whatToBring={[
-          "Comfortable clothing suitable for working with horses",
-          "Closed-toe shoes",
-          "Water bottle",
-        ]}
-        // imageLeft="/assets/images/homeschool-horse-class-left.jpg"
-        // imageRight="/assets/images/homeschool-horse-class-right.jpg"
-      />
-
-      <ProgramSection
         id="day-at-the-farm"
         title="Day at the Farm with Horses"
         tagline="Saddle up and start your horse journey—fun for all ages!"
         description="Spend a fun-filled 3 hours at the farm getting to know our amazing horses! This hands-on experience includes a riding lesson, horse care activities, and plenty of time to connect with the animals in a relaxed, supportive environment. Whether you're new to horses or just want more time in the barn, 'Day at the Farm' is a perfect way to learn, explore, and enjoy the magic of horses."
         dates={[
-          "Contact us for current schedule",
+          "Fall schedule will be posted in August",
           "3 hours per session ($50 per day)",
         ]}
         whatToBring={[
