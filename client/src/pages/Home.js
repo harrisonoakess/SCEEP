@@ -11,6 +11,12 @@ import picture3 from '../assets/images/homePageCarousel/sceep3.jpg'
 import picture4 from '../assets/images/homePageCarousel/sceep4.jpg'
 import picture5 from '../assets/images/homePageCarousel/sceep5.jpg'
 import picture6 from '../assets/images/homePageCarousel/sceep6.jpg'
+import picture7 from '../assets/images/homePageCarousel/sceep7.jpg'
+import picture8 from '../assets/images/homePageCarousel/sceep8.jpg'
+import picture9 from '../assets/images/homePageCarousel/sceep9.jpg'
+import picture10 from '../assets/images/homePageCarousel/sceep10.jpg'
+import picture11 from '../assets/images/homePageCarousel/sceep11.jpg'
+import picture12 from '../assets/images/homePageCarousel/sceep12.jpg'
 
 
 const Home = () => {
@@ -35,6 +41,12 @@ const Home = () => {
     picture4,
     picture5,
     picture6,
+    picture7,
+    picture8,
+    picture9,
+    picture10,
+    picture11,
+    picture12,
   ];
 
   return (
