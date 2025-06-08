@@ -13,7 +13,7 @@ const ProgramSection = ({ id, title, tagline, description, dates, whatToBring })
         {dates?.length > 0 && (
           <>
             <h3>Dates & Times</h3>
-            <ul>{dates.map((item, idx) => <li key={idx}>{item}</li>)}</ul>
+            <ul className="program-dates">{dates}</ul>
           </>
         )}
 
@@ -58,11 +58,11 @@ const HomeschoolPrograms = () => {
                     responsibility, and confidence while learning alongside fellow horse enthusiasts in 
                     a fun, educational setting."
         dates={[
-          "Tuesdays 10:30 am - 12:00 pm",
-          "8/5/25 - 12/16/25",
-          "20 classes",
-          "$750 (payment plans available)",
-          "limited availability",
+          <li key="tues">Tuesdays 10:30 am - 12:00 pm</li>,
+          <li key="tues-1" className="sub-date">- 8/5/25 - 12/16/25</li>,
+          <li key="tues-2" className="sub-date">- 20 classes</li>,
+          <li key="tues-3" className="sub-date">- $750 (payment plans available)</li>,
+          <li key="tues-4" className="sub-date">- limited availability</li>,
         ]}
         whatToBring={[
           "Closed-toe shoes",
@@ -71,37 +71,38 @@ const HomeschoolPrograms = () => {
         ]}
       />
 
-      <ProgramSection
-        id="homeschool-pony-pals"
-        title="Homeschool Pony Pals"
-        tagline="The perfect introduction to horses for young homeschoolers!"
-        description="Homeschool Pony Pals is a fun and educational program that meets once per week
-                    for two hours ans is perfect for young horse lovers who want to deepen their
-                    understanding and skills. Each participant is assigned their own horse to care for and
-                    ride during the session. Activities include both mounted and unmounted learning
-                    including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork.
-                    Pony Pals helps build confidence, responsibility, and a strong bond between rider and
-                    horse in a supportive and hands-on environment."
-        dates={[
-          "Mondays 10:30-12:30 pm",
-          "August - May",
-          "4 classes per month",
-          "$150 per month",
-          "limited availability",
 
-          "Wednesday 10:30-12:30 pm",
-          "August - May",
-          "4 classes per month",
-          "$150 per month",
-          "limited availability",
-        ]}
-        whatToBring={[
-          "Long pants",
-          "Closed-toe shoes or boots",
-          "Water bottle",
-          "Dress for the weather",
-        ]}
-      />
+<ProgramSection
+  id="homeschool-pony-pals"
+  title="Homeschool Pony Pals"
+  tagline="The perfect introduction to horses for young homeschoolers!"
+  description="Homeschool Pony Pals is a fun and educational program that meets once per week
+              for two hours ans is perfect for young horse lovers who want to deepen their
+              understanding and skills. Each participant is assigned their own horse to care for and
+              ride during the session. Activities include both mounted and unmounted learning
+              including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork.
+              Pony Pals helps build confidence, responsibility, and a strong bond between rider and
+              horse in a supportive and hands-on environment."
+  dates={[
+    <li key="mon">Mondays 10:30 am - 12:30 pm</li>,
+    <li key="mon-1" className="sub-date">- August - May</li>,
+    <li key="mon-2" className="sub-date">- 4 classes per month</li>,
+    <li key="mon-3" className="sub-date">- $150 per month</li>,
+    <li key="mon-4" className="sub-date">- limited availability</li>,
+    <li key="wed" style={{ marginTop: '1em' }}>Wednesdays 10:30 am - 12:30 pm</li>,
+    <li key="wed-1" className="sub-date">- August - May</li>,
+    <li key="wed-2" className="sub-date">- 4 classes per month</li>,
+    <li key="wed-3" className="sub-date">- $150 per month</li>,
+    <li key="wed-4" className="sub-date">- limited availability</li>,
+  ]}
+  whatToBring={[
+    "Long pants",
+    "Closed-toe shoes or boots",
+    "Water bottle",
+    "Dress for the weather",
+  ]}
+/>
+
     </div>
   );
 };
