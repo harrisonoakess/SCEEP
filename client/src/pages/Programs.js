@@ -65,7 +65,9 @@ const Programs = () => {
         id="day-at-the-farm"
         title="Day at the Farm with Horses"
         tagline="Saddle up and start your horse journey—fun for all ages!"
-        description="Spend a fun-filled 3 hours at the farm getting to know our amazing horses! This hands-on experience includes a riding lesson, horse care activities, and plenty of time to connect with the animals in a relaxed, supportive environment. Whether you're new to horses or just want more time in the barn, 'Day at the Farm' is a perfect way to learn, explore, and enjoy the magic of horses."
+        description="Spend a fun-filled 3 hours at the farm getting to know our amazing horses! This hands-on experience includes a riding lesson, horse care activities, 
+                      and plenty of time to connect with the animals in a relaxed, supportive environment. Whether you're new to horses or just want more time in the barn, 'Day at the 
+                      Farm' is a perfect way to learn, explore, and enjoy the magic of horses. This program is geared for ages five and older"
         dates={[
           "Fall schedule will be posted in August",
           "3 hours per session ($50 per day)",
@@ -102,8 +104,11 @@ const Programs = () => {
       <ProgramSection
         id="private-horsemanship"
         title="Private Horsemanship Lessons"
-        tagline="One-on-one horsemanship—your goals, your pace."
-        description="Our Private Horsemanship Lessons offer one-on-one instruction tailored to each rider’s goals, experience level, and learning style. Whether you're just starting or looking to refine your skills, these personalized sessions focus on both riding and ground-based horsemanship. Lessons are available using your horse or one of our well-trained school horses. Build confidence, improve communication, and deepen your partnership with horses in a supportive and encouraging environment."
+        tagline=""
+        description="Our Horsemanship Lessons offer instruction tailored to each rider’s goals, experience level, and learning style. 
+                      Whether you're just starting or looking to refine your skills, these sessions focus on both riding 
+                      and ground-based horsemanship. Lessons are available using your horse or one of our well-trained school horses.
+                       Build confidence, improve communication, and deepen your partnership with horses in a supportive and encouraging environment."
         dates={[
           "Scheduled based on availability",
           "Contact us for pricing",
