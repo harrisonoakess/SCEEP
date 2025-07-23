@@ -61,7 +61,7 @@ const HomeschoolPrograms = () => {
           <li key="tues">Tuesdays 10:30 am - 12:00 pm</li>,
           <li key="tues-1" className="sub-date">- 9/2 - 11/25</li>,
           <li key="tues-2" className="sub-date">- 20 classes</li>,
-          <li key="tues-3" className="sub-date">- $325 (price includes $25 supply fee)</li>,
+          <li key="tues-3" className="sub-date">- $350 (price includes $25 supply fee)</li>,
           <li key="tues-4" className="sub-date">- limited availability</li>,
         ]}
         whatToBring={[
