@@ -65,9 +65,10 @@ const HomeschoolPrograms = () => {
           <li key="tues-4" className="sub-date">- limited availability</li>,
         ]}
         whatToBring={[
-          "Closed-toe shoes",
+          "Long pants",
+          "Closed-toe shoes or boots",
+          "Water bottle",
           "Dress for the weather",
-          "Water bottle"
         ]}
       />
 
