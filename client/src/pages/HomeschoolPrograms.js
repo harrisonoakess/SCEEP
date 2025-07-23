@@ -56,12 +56,12 @@ const HomeschoolPrograms = () => {
                     this class focuses on equine science, horse care, safety, equipment, behavior, and 
                     the basics of horsemanship. It's a great way for students to build knowledge, 
                     responsibility, and confidence while learning alongside fellow horse enthusiasts in 
-                    a fun, educational setting. There will be eight unmouted sessions and four riding sessions in this 12 week class."
+                    a fun, educational setting. There will be eight unmouted sessions and four riding sessions in this 12 week class. Instructor: Jay Ohaco"
         dates={[
           <li key="tues">Tuesdays 10:30 am - 12:00 pm</li>,
           <li key="tues-1" className="sub-date">- 9/2 - 11/25</li>,
-          <li key="tues-2" className="sub-date">- 20 classes</li>,
-          <li key="tues-3" className="sub-date">- $350 (price includes $25 supply fee)</li>,
+          <li key="tues-2" className="sub-date">- 12 classes</li>,
+          <li key="tues-3" className="sub-date">- $350</li>,
           <li key="tues-4" className="sub-date">- limited availability</li>,
         ]}
         whatToBring={[
@@ -82,7 +82,7 @@ const HomeschoolPrograms = () => {
               ride during the session. Activities include both mounted and unmounted learning
               including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork.
               Pony Pals helps build confidence, responsibility, and a strong bond between rider and
-              horse in a supportive and hands-on environment."
+              horse in a supportive and hands-on environment. Instructor: Jay Ohaco"
   dates={[
     <li key="mon">Mondays 10:30 am - 12:30 pm</li>,
     <li key="mon-1" className="sub-date">- September - May</li>,
@@ -90,7 +90,7 @@ const HomeschoolPrograms = () => {
     <li key="mon-3" className="sub-date">- $200 per month</li>,
     <li key="mon-4" className="sub-date">- limited availability</li>,
     <li key="wed" style={{ marginTop: '1em' }}>Wednesdays 10:30 am - 12:30 pm</li>,
-    <li key="wed-1" className="sub-date">- August - May</li>,
+    <li key="wed-1" className="sub-date">- September - May</li>,
     <li key="wed-2" className="sub-date">- 4 classes per month</li>,
     <li key="wed-3" className="sub-date">- $200 per month</li>,
     <li key="wed-4" className="sub-date">- limited availability</li>,
