@@ -47,7 +47,7 @@ const HomeschoolPrograms = () => {
         <p><strong>Note:</strong> ESA accepted for all homeschool programs.</p>
       </div>
 
-      <ProgramSection
+      {/* <ProgramSection
         id="homeschool-horse-class"
         title="Homeschool Horse Class"
         tagline="Hands-on learning with real horses—no riding experience needed!"
@@ -70,7 +70,7 @@ const HomeschoolPrograms = () => {
           "Water bottle",
           "Dress for the weather",
         ]}
-      />
+      /> */}
 
 
 <ProgramSection
@@ -90,6 +90,13 @@ const HomeschoolPrograms = () => {
     <li key="mon-2" className="sub-date">- 4 classes per month</li>,
     <li key="mon-3" className="sub-date">- $200 per month</li>,
     <li key="mon-4" className="sub-date">- limited availability</li>,
+
+    <li key="tues" style={{ marginTop: '1em' }}>Tuesdays 10:30 am - 12:30 pm</li>,
+    <li key="tues-1" className="sub-date">- September - May</li>,
+    <li key="tues-2" className="sub-date">- 4 classes per month</li>,
+    <li key="tues-3" className="sub-date">- $200 per month</li>,
+    <li key="tues-4" className="sub-date">- limited availability</li>,
+
     <li key="wed" style={{ marginTop: '1em' }}>Wednesdays 10:30 am - 12:30 pm</li>,
     <li key="wed-1" className="sub-date">- September - May</li>,
     <li key="wed-2" className="sub-date">- 4 classes per month</li>,
