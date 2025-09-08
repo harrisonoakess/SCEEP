@@ -69,8 +69,12 @@ const Programs = () => {
                       and plenty of time to connect with the animals in a relaxed, supportive environment. Whether you're new to horses or just want more time in the barn, 'Day at the 
                       Farm' is a perfect way to learn, explore, and enjoy the magic of horses. This program is geared for ages five and older"
         dates={[
-          "Fall schedule will be posted in August",
-          "3 hours per session ($50 per day)",
+          "September 20, 27",
+          "October 4, 18",
+          "November 1, 8",
+          "Decmeber 13",
+          "Each day is from 10:00 AM - 1:00 PM and costs $50 per day",
+          "Text Laurie Brimhall at (480) - 518 - 5662 to enroll"
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
@@ -112,6 +116,7 @@ const Programs = () => {
         dates={[
           "Scheduled based on availability",
           "Contact us for pricing",
+          "Text Laurie Brimhall at (480) - 518 - 5662 to enroll",
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
@@ -145,13 +150,13 @@ const Programs = () => {
       </>
   }
   dates={[
-    "Session 1: June 9–11 (currently full)",
-    "Session 2: June 16–18 (currently full)",
-    "Session 3: June 23–25 (currently full)",
-    "Morning Camp: 7:30–11:30 ($150)",
-    "Afternoon Camp: 1:00–5:00 ($150)",
-    "Full Day Camp: 7:30–5:00 ($340)",
-    "Payment due by May 31"
+    // "Session 1: June 9–11 (currently full)",
+    // "Session 2: June 16–18 (currently full)",
+    // "Session 3: June 23–25 (currently full)",
+    // "Morning Camp: 7:30–11:30 ($150)",
+    // "Afternoon Camp: 1:00–5:00 ($150)",
+    // "Full Day Camp: 7:30–5:00 ($340)",
+    // "Payment due by May 31"
   ]}
   whatToBring={[
     "Lunch (for full-day campers)",
