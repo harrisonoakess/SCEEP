@@ -102,6 +102,9 @@ const HomeschoolPrograms = () => {
     <li key="wed-2" className="sub-date">- 4 classes per month</li>,
     <li key="wed-3" className="sub-date">- $200 per month</li>,
     <li key="wed-4" className="sub-date">- limited availability</li>,
+
+    <li key="adv" style={{ marginTop: '1em' }}>In the event of inclement weather, there will be unmounted horsemanship learning activities</li>
+
   ]}
   whatToBring={[
     "Long pants",

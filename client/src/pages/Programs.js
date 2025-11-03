@@ -58,7 +58,7 @@ const Programs = () => {
   return (
     <div className="programs-page">
       <div className="esa-note">
-        <p><strong>Note:</strong> ESA accepted for all programs.</p>
+        <p><strong>Note:</strong> ESA accepted for all programs. Contact Laurie Brimhall if you need a receipt, ESA credentials, or more information.</p>
       </div>
 
       <ProgramSection
@@ -74,13 +74,15 @@ const Programs = () => {
           "November 1, 8",
           "Decmeber 13",
           "Each day is from 10:00 AM - 1:00 PM and costs $50 per day",
-          "Text Laurie Brimhall at (480) - 518 - 5662 to enroll"
+          "Text Laurie Brimhall at (480) 518 - 5662 to enroll",
+          "In the event of inclement weather, there will be unmounted horsemanship learning activities",
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
           "Closed-toe shoes (boots preferred)",
           "Water bottle",
           "Sunscreen and hat",
+          "Dress for the weather",
         ]}
         // imageLeft="/assets/images/day-at-the-farm-left.jpg"
         // imageRight="/assets/images/day-at-the-farm-right.jpg"
@@ -116,12 +118,14 @@ const Programs = () => {
         dates={[
           "Scheduled based on availability",
           "Contact us for pricing",
-          "Text Laurie Brimhall at (480) - 518 - 5662 to enroll",
+          "Text Laurie Brimhall at (480) 518 - 5662 to enroll",
+          "In the event of inclement weather, there will be unmounted horsemanship learning activities",
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
           "Closed-toe shoes (boots preferred)",
           "Water bottle",
+           "Dress for the weather",
         ]}
         // imageLeft="/assets/images/private-horsemanship-left.jpg"
         // imageRight="/assets/images/private-horsemanship-right.jpg"
@@ -150,6 +154,7 @@ const Programs = () => {
       </>
   }
   dates={[
+    "Dates and times coming soon",
     // "Session 1: June 9–11 (currently full)",
     // "Session 2: June 16–18 (currently full)",
     // "Session 3: June 23–25 (currently full)",
@@ -185,6 +190,8 @@ const Programs = () => {
         dates={[
           "Tuesdays and Thursdays from 4:00pm - 6:00pm (currently full)",
           "$300 per month",
+           "In the event of inclement weather, there will be unmounted horsemanship learning activities",
+
         ]}
         whatToBring={[
           "Long pants (jeans recommended)",
@@ -230,6 +237,7 @@ const Programs = () => {
         description="The Silver Creek Equine Apprenticeship Program will develop the next generation of horse professionals and passionate equestrians through immersive, hands-on experience. Participants gain in-depth education in all facets of horsemanship—including riding, horse care, stable management, and leadership—within a real-world, supportive learning environment. The program fosters responsibility, confidence, and a lifelong commitment to growth and excellence in equine care."
         dates={[
           "Contact us for program details and application process",
+          
         ]}
         // imageLeft="/assets/images/equine-apprenticeship-left.jpg"
         // imageRight="/assets/images/equine-apprenticeship-right.jpg"
