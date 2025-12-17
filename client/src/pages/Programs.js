@@ -183,7 +183,7 @@ const Programs = () => {
           "Registration begins February 1, 2026",
           "Text Laurie Brimhall at (480) 518-5662 to register",
           "A $50 nonrefundable fee is due at registration (applied toward camp total)",
-          "Payment due by May 31, 2026",
+          "Payment due by May 1, 2026",
           "Waiver must be signed before participation",
         ]}
         whatToBring={[
