@@ -72,6 +72,36 @@ const HomeschoolPrograms = () => {
         ]}
       /> */}
 
+<ProgramSection
+  id="farm-school"
+  title="Farm School Classes"
+  tagline="Real farm experiences for ages 5–8"
+  description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Kryi Wood"
+  dates={[
+  <li key="fs-meets" className="sub-date">- Classes meet 4 times per month</li>,
+  <li key="fs-fee" className="sub-date">- Class fee: $80 per month</li>,
+  <li key="fs-supply" className="sub-date">- Supply fee: $30 (due at registration, nonrefundable)</li>,
+  <li key="fs-esa" className="sub-date">- ESA accepted for all programs</li>,
+
+  <li key="fs-mon" style={{ marginTop: '1em' }}>Mondays: 1:00 pm – 3:00 pm</li>,
+  <li key="fs-wed">Wednesdays: 1:00 pm – 3:00 pm</li>,
+
+  <li key="fs-register" style={{ marginTop: '1em' }}>
+    <strong>To register:</strong> Text Laurie Brimhall @ 480-518-5662 with the participant&apos;s name, age, and class request.
+  </li>,
+  <li key="fs-location" className="sub-date">- Located in Snowflake, Arizona</li>,
+]}
+
+  whatToBring={[
+    "Closed-toe shoes",
+    "Water bottle",
+    "Dress for the weather",
+  ]}
+/>
+
+
+
+
 
 <ProgramSection
   id="homeschool-pony-pals"
@@ -83,22 +113,22 @@ const HomeschoolPrograms = () => {
               ride during the session. Activities include both mounted and unmounted learning
               including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork.
               Pony Pals helps build confidence, responsibility, and a strong bond between rider and
-              horse in a supportive and hands-on environment. Instructor: Jay Ohaco"
+              horse in a supportive and hands-on environment. Geared for ages 8 and older"
   dates={[
     <li key="mon">Mondays 10:30 am - 12:30 pm</li>,
-    <li key="mon-1" className="sub-date">- September - May</li>,
+    <li key="mon-1" className="sub-date">- August - May</li>,
     <li key="mon-2" className="sub-date">- 4 classes per month</li>,
     <li key="mon-3" className="sub-date">- $200 per month</li>,
     <li key="mon-4" className="sub-date">- limited availability</li>,
 
     <li key="tues" style={{ marginTop: '1em' }}>Tuesdays 10:30 am - 12:30 pm</li>,
-    <li key="tues-1" className="sub-date">- September - May</li>,
+    <li key="tues-1" className="sub-date">- August - May</li>,
     <li key="tues-2" className="sub-date">- 4 classes per month</li>,
     <li key="tues-3" className="sub-date">- $200 per month</li>,
     <li key="tues-4" className="sub-date">- limited availability</li>,
 
     <li key="wed" style={{ marginTop: '1em' }}>Wednesdays 10:30 am - 12:30 pm</li>,
-    <li key="wed-1" className="sub-date">- September - May</li>,
+    <li key="wed-1" className="sub-date">- August - May</li>,
     <li key="wed-2" className="sub-date">- 4 classes per month</li>,
     <li key="wed-3" className="sub-date">- $200 per month</li>,
     <li key="wed-4" className="sub-date">- limited availability</li>,

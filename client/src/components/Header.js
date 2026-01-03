@@ -21,7 +21,7 @@ function Header() {
                 <Link to="/programs#day-at-the-farm">Day at the Farm</Link>
                 <Link to="/programs#private-horsemanship">Private Lessons</Link>
                 <Link to="/programs#summer-horse-camp">Summer Horse Camp</Link>
-                <Link to="/programs#pony-pals">Pony Pals</Link>
+                <Link to="/programs#pony-pals">After School Pony Pals</Link>
                 <Link to="/programs#dirt-road-riders">Dirt Road Riders</Link>
                 <Link to="/programs#equine-apprenticeship">Equine Apprenticeship</Link>
               </div>

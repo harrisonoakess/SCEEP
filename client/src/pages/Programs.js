@@ -154,7 +154,7 @@ const Programs = () => {
             <br />
             <strong>Camp will run rain, shine, or wind.</strong>{' '}
             <a href={waiverDoc} download>
-              Waiver
+              Liability Waiver
             </a>{' '}
             must be signed before participation — print your texted liability waiver or pick one up on
             the first day.
@@ -182,9 +182,9 @@ const Programs = () => {
         registrationAndPayment={[
           "Registration begins February 1, 2026",
           "Text Laurie Brimhall at (480) 518-5662 to register",
-          "A $50 nonrefundable fee is due at registration (applied toward camp total)",
-          "Payment due by May 1, 2026",
-          "Waiver must be signed before participation",
+          "A $50 nonrefundable fee is due at registration (applied toward camp fee)",
+          "Remaing balence due by May 1, 2026",
+          "Liabiltiy Waiver must be signed before participation",
         ]}
         whatToBring={[
           'Lunch (for full-day campers)',
@@ -201,12 +201,12 @@ const Programs = () => {
 
       <ProgramSection
         id="pony-pals"
-        title="Pony Pals"
-        tagline="Pony Pals — Ride, learn, and explore with friends!"
-        description="Pony Pals is a fun and educational program that meets four hours per week, typically divided into two weekly sessions. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
+        title="After School Pony Pals"
+        tagline="After School Pony Pals — Ride, learn, and explore with friends!"
+        description="After School Pony Pals is a fun and educational program that meets each week. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
         dates={[
-          'Tuesdays and Thursdays from 4:00pm - 6:00pm (currently full)',
-          '$300 per month',
+          'Mondays from 4:00pm to 6:00pm - $150 per month (currently full)',
+          'Tuesdays and Thursdays from 4:00pm to 6:00pm - $300 per month (currently full)',
           'In the event of inclement weather, there will be unmounted horsemanship learning activities',
         ]}
         whatToBring={[

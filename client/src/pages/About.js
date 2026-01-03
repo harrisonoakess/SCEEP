@@ -3,13 +3,13 @@ import { useLocation } from 'react-router-dom';
 import './About.css';
 
 import LaurieBrimhall from '../assets/images/aboutPageProfiles/laurieBrimhall1.jpg';
-import JayOhaco from '../assets/images/aboutPageProfiles/jayOhaco.jpg';
+// import JayOhaco from '../assets/images/aboutPageProfiles/jayOhaco.jpg';
 import LexiGardner from '../assets/images/aboutPageProfiles/lexiGardner1.jpg';
 import SedonaForbis from '../assets/images/aboutPageProfiles/sedonaForbis.jpg';
 import KyriWood from '../assets/images/aboutPageProfiles/kyriWood.png';
 import ClaireHall from '../assets/images/aboutPageProfiles/claireHall.png';
 import RayaWhipple from '../assets/images/aboutPageProfiles/rayaWhipple.jpg';
-import LydiaBowman from '../assets/images/aboutPageProfiles/lydiaBowman.png';
+// import LydiaBowman from '../assets/images/aboutPageProfiles/lydiaBowman.png';
 import DelaneyMelluse from '../assets/images/aboutPageProfiles/delaneyMelluse.jpg';
 import BethNielsen from '../assets/images/aboutPageProfiles/bethNielsen.png';
 import Harley from '../assets/images/aboutPageProfiles/harley.jpg';
@@ -18,7 +18,7 @@ import Lady from '../assets/images/aboutPageProfiles/lady.jpg';
 import Buddy from '../assets/images/aboutPageProfiles/buddy.jpg';
 import Ally from '../assets/images/aboutPageProfiles/ally.jpg';
 import Duke from '../assets/images/aboutPageProfiles/duke.jpg';
-import Maverick from '../assets/images/aboutPageProfiles/maverick.jpg';
+// import Maverick from '../assets/images/aboutPageProfiles/maverick.jpg';
 
 const About = () => {
   const location = useLocation();
@@ -43,12 +43,12 @@ const About = () => {
       A lifelong learner, she continually seeks new knowledge and techniques to enhance her teaching and equestrian knowledge, ensuring her students receive the best, most current horsemanship education available.`,
       photo: LaurieBrimhall,
     },
-    {
-      name: 'Jay Ohaco',
-      role: 'Instructor/Homeschool Horse Class/Horse Camp/Group Lessons',
-      bio: `Jay was born in England and raised in Santa Monica, California. For 10 years, she learned and worked for a British Horse Society riding instructor. She has many years of Eventing experience and has worked for several Grand Prix dressage riders. A difficult horse brought her to Ray Hunt, Buck Brannaman, and Bryan Neubert. She has ridden and taught full-time for over 30 years, has an eclectic, easy approach, and is teaching English and Western lessons. Jay and her husband, Jeff, moved to Snowflake a few years ago and love the people and families in this area! We are so happy to have her in our program!`,
-      photo: JayOhaco,
-    },
+    // {
+    //   name: 'Jay Ohaco',
+    //   role: 'Instructor/Homeschool Horse Class/Horse Camp/Group Lessons',
+    //   bio: `Jay was born in England and raised in Santa Monica, California. For 10 years, she learned and worked for a British Horse Society riding instructor. She has many years of Eventing experience and has worked for several Grand Prix dressage riders. A difficult horse brought her to Ray Hunt, Buck Brannaman, and Bryan Neubert. She has ridden and taught full-time for over 30 years, has an eclectic, easy approach, and is teaching English and Western lessons. Jay and her husband, Jeff, moved to Snowflake a few years ago and love the people and families in this area! We are so happy to have her in our program!`,
+    //   photo: JayOhaco,
+    // },
     {
       name: 'Lexi Gardner',
       role: 'Equine Apprentice/Instructor',
@@ -90,12 +90,7 @@ const About = () => {
       bio: `Raya Bow Whipple was born and raised in Snowflake, AZ. She is 12 years old and in the 7th grade. She has been riding horses her whole life. This is her 5th year showing and competing with horses in the 4-H program. Raya has a deep love for animals with a true gift for training them. She has been working with Laurie and Jay for more than 2 years. She is a hard worker and a true friend to anyone. Her true love is horses, and enjoys spending every spare minute she has with them.`,
       photo: RayaWhipple,
     },
-    {
-      name: 'Lydia Bowman',
-      role: 'Horse Camp Counselor',
-      bio: `My name is Lydia Bowman, and I’m 17 years old. I love horses, and I’ve been riding and participating in horse 4-H since I was 11. I have 3 horses that I ride on the trails and in the arena. I also love dancing, music, piano, reading, and being outdoors.`,
-      photo: LydiaBowman,
-    },
+ 
     {
       name: 'Delaney Melluse',
       role: 'Horse Camp Counselor/Day at the Farm/Saddle Club',
@@ -147,12 +142,6 @@ const About = () => {
       role: 'Roan Gelding, 18 years old',
       bio: `Duke is an 18-year-old roan gelding with a big engine and an even bigger heart. Nicknamed "Lightning McQueen" by the kids for his love of speed, Duke shines in everything from rodeo drill team performances to ranch work, jumping, and even carrying a rodeo queen with pride. Despite his go-go-go spirit, he has a soft spot for the tiniest riders—gently lowering his head for snuggles and soaking up every moment of grooming time. Versatile, affectionate, and full of personality, Duke is the perfect mix of power and sweetness.`,
       photo: Duke,
-    },
-    {
-      name: 'Maverick',
-      role: 'Thoroughbred, 12 years old',
-      bio: `Maverick is a striking 12-year-old bay Thoroughbred standing tall at 16.1 hands. Once a racehorse, Maverick has gracefully transitioned into a well-rounded riding partner with a calm, steady canter and a love for jumping. Primarily ridden English, he’s a natural in the arena and a joy out on the trails. Maverick has a bold personality and loves attention, especially with treats from the kids. With his elegant build, athleticism, and confident charm, Maverick is as beautiful as he is versatile—a true example of heart and transformation.`,
-      photo: Maverick,
     },
   ];
 
