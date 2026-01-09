@@ -14,11 +14,12 @@ import DelaneyMelluse from '../assets/images/aboutPageProfiles/delaneyMelluse.jp
 import BethNielsen from '../assets/images/aboutPageProfiles/bethNielsen.png';
 import Harley from '../assets/images/aboutPageProfiles/harley.jpg';
 import Tuff from '../assets/images/aboutPageProfiles/tuff.jpg';
-import Lady from '../assets/images/aboutPageProfiles/lady.jpg';
 import Buddy from '../assets/images/aboutPageProfiles/buddy.jpg';
 import Ally from '../assets/images/aboutPageProfiles/ally.jpg';
 import Duke from '../assets/images/aboutPageProfiles/duke.jpg';
 // import Maverick from '../assets/images/aboutPageProfiles/maverick.jpg';
+import MayceeBrimhall from '../assets/images/aboutPageProfiles/mayceeBrimhall.jpeg'
+import KariWhipple from '../assets/images/aboutPageProfiles/kariWhipple.jpeg'
 
 const About = () => {
   const location = useLocation();
@@ -43,6 +44,14 @@ const About = () => {
       A lifelong learner, she continually seeks new knowledge and techniques to enhance her teaching and equestrian knowledge, ensuring her students receive the best, most current horsemanship education available.`,
       photo: LaurieBrimhall,
     },
+    {
+      name: 'Kari Whipple',
+      role: 'Instructor',
+      bio: `My name is Kari Whipple. I grew up here in Snowflake, Arizona on my Grandfather’s cattle ranch. As a child my Grandfather taught me how to ride and take care of horses and other livestock. This is where my love of horses originated. 
+      Over the years I have continued to work and raise my own horses. I have also started teaching. I was a teachers aid at a local preschool here in Snowflake. And then for the past 2 years I have been substitute teaching for the Snowflake schools. 
+      I love working with horses and children, and am grateful for this equestrian program that allows me to do both.`,
+      photo: KariWhipple,
+    },
     // {
     //   name: 'Jay Ohaco',
     //   role: 'Instructor/Homeschool Horse Class/Horse Camp/Group Lessons',
@@ -54,6 +63,21 @@ const About = () => {
       role: 'Equine Apprentice/Instructor',
       bio: `Lexi is a horse crazy girl who is not afraid to get her hands dirty regarding horses. She grew up around horses and has been riding since she could walk. She started taking horses more seriously 3 years ago and became one of Laurie’s horse camp counselors, and took frequent lessons. Lexi has competed in various local horse shows, held a rodeo queen title for 2 years, and competed in the state 4H horse shows in both western and English, taking home many state champ buckles and ribbons and even qualifying for nationals. She loves the Western way of life and enjoys sharing it with others!`,
       photo: LexiGardner,
+    },
+    {
+      name: 'Maycee Brimhall',
+      role: 'Instructor',
+      bio: `Howdy everyone! My name’s Maycee Brimhall, and I’m excited to be working at Horse Camp. Horses have been a major part of my life, and I’ve been in the saddle since I was eight years old. There’s something about the sound of hooves in the dirt 
+            and a good horse under you that just feels like home, and that’s a feeling I’m excited to share with the campers.
+
+            In past years I’ve been involved in rodeo queening, which has pushed me to grow in confidence, horsemanship, and responsibility. Representing the sport I love has taught me to work hard, carry myself with professionalism, and always 
+            take pride in how I treat both people and horses. Those experiences have shaped who I am today.
+
+            Now I am 16, and ready to jump in with both boots. I’m looking forward to long days, early mornings, and doing whatever needs to be done—whether that’s helping a camper feel comfortable around horses, 
+            keeping things running smoothly, or just lending a hand wherever it’s needed. Most of all, I can’t wait to build connections with the campers and staff!
+
+            I’m grateful for the chance to be part camp! Can’t wait to see you!!`,
+      photo: MayceeBrimhall,
     },
     {
       name: 'Sedona Forbis',
@@ -118,12 +142,6 @@ const About = () => {
       role: 'Quarter Horse, 18 years old',
       bio: `Tuff is an 18-year-old bay Quarter Horse gelding whose name perfectly matches his talent and grit. Exceptionally versatile, Tuff has done it all—from rodeo drill team performances and speed events to roping and ranch work. But his true shine is in the show ring, where he’s racked up numerous awards across a wide range of disciplines. Whether it’s Western Pleasure, Trail, Reining, or jumping in English classes, Tuff brings elegance, athleticism, and heart to every ride. A true all-around horse, he’s as smart as he is stunning.`,
       photo: Tuff,
-    },
-    {
-      name: 'Lady',
-      role: 'Mare, 22 years old',
-      bio: `Lady is a 22-year-old mare with a heart full of kindness and a spirit that calms everyone around her. Known for her sweet temperament and endless patience, Lady has been a trusted companion to countless children learning to ride. Gentle, steady, and always willing, she’s the kind of horse that makes riders feel safe and confident from the moment they meet her. Beloved by kids and adults alike, Lady is more than just a horse—she’s a quiet teacher and a cherished friend.`,
-      photo: Lady,
     },
     {
       name: 'Buddy',

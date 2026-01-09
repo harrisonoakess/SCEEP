@@ -216,6 +216,28 @@ const Programs = () => {
           'Dress for the weather',
         ]}
       />
+            <ProgramSection
+        id="farm-school"
+        title="Farm School Classes"
+        tagline="Real farm experiences for ages 5–8"
+        description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Kryi Wood."
+        dates={[
+          'Classes meet 4 times per month',
+          'Class fee: $80 per month',
+          'Supply fee: $30 (due at registration, nonrefundable)',
+          'ESA accepted for all programs',
+          'Mondays: 1:00 PM – 3:00 PM',
+          'Wednesdays: 1:00 PM – 3:00 PM',
+          "To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.",
+          'Located in Snowflake, Arizona',
+        ]}
+        whatToBring={[
+          'Closed-toe shoes',
+          'Water bottle',
+          'Dress for the weather',
+        ]}
+      />
+
 
       <ProgramSection
         id="dirt-road-riders"

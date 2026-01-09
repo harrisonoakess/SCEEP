@@ -8,6 +8,7 @@ function Header() {
       <div className="header-content">
         <h1>Silver Creek Equestrian Education Program</h1>
         <p>Snowflake, Arizona</p>
+
         <nav className="nav-menu">
           <ul>
             <li className="dropdown">
@@ -24,20 +25,22 @@ function Header() {
                 <Link to="/programs#pony-pals">After School Pony Pals</Link>
                 <Link to="/programs#dirt-road-riders">Dirt Road Riders</Link>
                 <Link to="/programs#equine-apprenticeship">Equine Apprenticeship</Link>
+
+                {/* Farm School on Programs page */}
+                <Link to="/programs#farm-school">Farm School Classes</Link>
               </div>
             </li>
 
-            {/* Homeschool Programs Dropdown */}
-            {/* Homeschool Programs Dropdown */}
-              <li className="dropdown">
-                <span className="dropdown-toggle">Homeschool Activities</span>
-                <div className="dropdown-menu">
-                  <Link to="/homeschool-programs#farm-school">Farm School Classes</Link>
-                  {/* <Link to="/homeschool-programs#homeschool-horse-class">Homeschool Horse Class</Link> */}
-                  <Link to="/homeschool-programs#homeschool-pony-pals">Homeschool Pony Pals</Link>
-                </div>
-              </li>
-
+            {/* Homeschool Activities Dropdown */}
+            <li className="dropdown">
+              <span className="dropdown-toggle">Homeschool Activities</span>
+              <div className="dropdown-menu">
+                {/* Farm School on Homeschool page */}
+                <Link to="/homeschool-programs#farm-school">Farm School Classes</Link>
+                {/* <Link to="/homeschool-programs#homeschool-horse-class">Homeschool Horse Class</Link> */}
+                <Link to="/homeschool-programs#homeschool-pony-pals">Homeschool Pony Pals</Link>
+              </div>
+            </li>
 
             {/* About Dropdown */}
             <li className="dropdown">
