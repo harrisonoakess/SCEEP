@@ -5,18 +5,23 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';
 
 
-import picture1 from '../assets/images/homePageCarousel/sceep1.jpg'
-import picture2 from '../assets/images/homePageCarousel/sceep2.jpg'
-import picture3 from '../assets/images/homePageCarousel/sceep3.jpg'
-import picture4 from '../assets/images/homePageCarousel/sceep4.jpg'
-import picture5 from '../assets/images/homePageCarousel/sceep5.jpg'
-import picture6 from '../assets/images/homePageCarousel/sceep6.jpg'
-import picture7 from '../assets/images/homePageCarousel/sceep7.jpg'
-import picture8 from '../assets/images/homePageCarousel/sceep8.jpg'
-import picture9 from '../assets/images/homePageCarousel/sceep9.jpg'
-import picture10 from '../assets/images/homePageCarousel/sceep10.jpg'
-import picture11 from '../assets/images/homePageCarousel/sceep11.jpg'
-import picture12 from '../assets/images/homePageCarousel/sceep12.jpg'
+import picture1 from '../assets/images/homePageCarousel/sceep10.png'
+import picture2 from '../assets/images/homePageCarousel/sceep20.png'
+import picture3 from '../assets/images/homePageCarousel/sceep30.jpg'
+import picture4 from '../assets/images/homePageCarousel/sceep40.jpg'
+import picture5 from '../assets/images/homePageCarousel/sceep50.jpg'
+import picture6 from '../assets/images/homePageCarousel/sceep60.jpg'
+import picture7 from '../assets/images/homePageCarousel/sceep70.jpg'
+import picture8 from '../assets/images/homePageCarousel/sceep80.jpg'
+import picture9 from '../assets/images/homePageCarousel/sceep90.jpg'
+import picture10 from '../assets/images/homePageCarousel/sceep100.jpg'
+import picture11 from '../assets/images/homePageCarousel/sceep110.jpg'
+import picture12 from '../assets/images/homePageCarousel/sceep120.jpg'
+import picture13 from '../assets/images/homePageCarousel/sceep130.png'
+import picture14 from '../assets/images/homePageCarousel/sceep140.png'
+import picture15 from '../assets/images/homePageCarousel/sceep150.png'
+import picture16 from '../assets/images/homePageCarousel/sceep160.png'
+import picture17 from '../assets/images/homePageCarousel/sceep170.png'
 
 
 const Home = () => {
@@ -47,6 +52,11 @@ const Home = () => {
     picture10,
     picture11,
     picture12,
+    picture13,
+    picture14,
+    picture15,
+    picture16,
+    picture17,
   ];
 
   return (
