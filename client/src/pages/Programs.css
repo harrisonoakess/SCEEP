@@ -77,6 +77,19 @@
   margin-bottom: 10px;
 }
 
+.program-date-lines {
+  margin-bottom: 10px;
+}
+
+.program-date-line {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.program-date-lines .program-dates {
+  margin-top: 0;
+}
+
 .program-image {
   flex: 0 0 200px; /* Fixed width for images */
   max-width: 200px;

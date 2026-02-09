@@ -44,7 +44,8 @@ const HomeschoolPrograms = () => {
   return (
     <div className="programs-page">
       <div className="esa-note">
-        <p><strong>Note:</strong> ESA accepted for all homeschool programs.</p>
+        <p><strong>Note:</strong> ESA vendor. Contact Laurie Brimhall if you need an
+          invoice for ESA Payment.</p>
       </div>
 
       {/* <ProgramSection

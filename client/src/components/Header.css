@@ -19,6 +19,25 @@
   font-family: 'Georgia', serif;
 }
 
+.site-title-link {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.site-title-link:hover {
+  color: #d4a373;
+}
+
+.site-title-link:focus-visible {
+  outline: 2px solid #d4a373;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 .header-content p {
   margin: 5px 0 15px;
   font-size: 1.2rem;
@@ -105,5 +124,4 @@
   background-color: #5a3c3a;
   color: #d4a373;
 }
-
 

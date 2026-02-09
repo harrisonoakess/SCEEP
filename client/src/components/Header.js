@@ -3,21 +3,33 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       <div className="header-content">
-        <h1>Silver Creek Equestrian Education Program</h1>
+        <h1>
+          <button type="button" className="site-title-link" onClick={scrollToTop}>
+            Silver Creek Equestrian Education Program
+          </button>
+        </h1>
         <p>Snowflake, Arizona</p>
 
         <nav className="nav-menu">
           <ul>
             <li className="dropdown">
-              <Link to="/" className="dropdown-toggle">Home</Link>
+              <Link to="/" className="dropdown-toggle" onClick={scrollToTop}>
+                Home
+              </Link>
             </li>
 
             {/* Programs Dropdown */}
             <li className="dropdown">
-              <span className="dropdown-toggle">Programs</span>
+              <Link to="/programs" className="dropdown-toggle" onClick={scrollToTop}>
+                Programs
+              </Link>
               <div className="dropdown-menu">
                 <Link to="/programs#day-at-the-farm">Day at the Farm</Link>
                 <Link to="/programs#private-horsemanship">Private Lessons</Link>
@@ -33,7 +45,9 @@ function Header() {
 
             {/* Homeschool Activities Dropdown */}
             <li className="dropdown">
-              <span className="dropdown-toggle">Homeschool Activities</span>
+              <Link to="/homeschool-programs" className="dropdown-toggle" onClick={scrollToTop}>
+                Homeschool Activities
+              </Link>
               <div className="dropdown-menu">
                 {/* Farm School on Homeschool page */}
                 <Link to="/homeschool-programs#farm-school">Farm School Classes</Link>
@@ -44,7 +58,9 @@ function Header() {
 
             {/* About Dropdown */}
             <li className="dropdown">
-              <span className="dropdown-toggle">About Us</span>
+              <Link to="/about" className="dropdown-toggle" onClick={scrollToTop}>
+                About Us
+              </Link>
               <div className="dropdown-menu">
                 <Link to="/about#meet-the-team">Meet the Team</Link>
                 <Link to="/about#meet-the-horses">Meet the Horses</Link>

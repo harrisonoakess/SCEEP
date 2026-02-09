@@ -13,62 +13,106 @@ const ProgramSection = ({
   whatToBring,
   imageLeft,
   imageRight,
-}) => (
-  <section id={id} className="program-section">
-    <div className="program-content">
-      {imageLeft && (
-        <div className="program-image program-image-left">
-          <img src={imageLeft} alt={`${title} left`} />
+}) => {
+  const renderDates = (datesData) => {
+    if (Array.isArray(datesData)) {
+      return (
+        <ul className="program-dates">
+          {datesData.map((date, index) => {
+            if (React.isValidElement(date)) {
+              return date;
+            }
+
+            return <li key={index}>{date}</li>;
+          })}
+        </ul>
+      );
+    }
+
+    if (datesData && typeof datesData === 'object') {
+      const { lines, bullets, subBullets } = datesData;
+      return (
+        <div className="program-date-lines">
+          {Array.isArray(bullets) && (
+            <ul className="program-dates">
+              {bullets.map((item, index) => (
+                <li key={`bullet-${index}`}>{item}</li>
+              ))}
+            </ul>
+          )}
+          {Array.isArray(lines) &&
+            lines.map((line, index) => (
+              <div key={`line-${index}`} className="program-date-line">
+                {line}
+              </div>
+            ))}
+          {Array.isArray(subBullets) && (
+            <ul className="program-dates">
+              {subBullets.map((item, index) => (
+                <li key={`sub-bullet-${index}`}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
-      )}
+      );
+    }
 
-      <div className="program-details">
-        <h2>{title}</h2>
-        {tagline && <p className="program-tagline">{tagline}</p>}
-        <p>{description}</p>
+    return <div className="program-date-line">{datesData}</div>;
+  };
 
-        {dates && (
-          <>
-            <h3>Dates & Times</h3>
-            <ul>
-              {dates.map((date, index) => (
-                <li key={index}>{date}</li>
-              ))}
-            </ul>
-          </>
+  return (
+    <section id={id} className="program-section">
+      <div className="program-content">
+        {imageLeft && (
+          <div className="program-image program-image-left">
+            <img src={imageLeft} alt={`${title} left`} />
+          </div>
         )}
 
-        {registrationAndPayment && (
-          <>
-            <h3>Registration & Payment Information</h3>
-            <ul>
-              {registrationAndPayment.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </>
-        )}
+        <div className="program-details">
+          <h2>{title}</h2>
+          {tagline && <p className="program-tagline">{tagline}</p>}
+          <p>{description}</p>
 
-        {whatToBring && (
-          <>
-            <h3>What to Bring</h3>
-            <ul>
-              {whatToBring.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </>
+          {dates && (
+            <>
+              <h3>Dates & Times</h3>
+              {renderDates(dates)}
+            </>
+          )}
+
+          {registrationAndPayment && (
+            <>
+              <h3>Registration & Payment Information</h3>
+              <ul>
+                {registrationAndPayment.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {whatToBring && (
+            <>
+              <h3>What to Bring</h3>
+              <ul>
+                {whatToBring.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+        </div>
+
+        {imageRight && (
+          <div className="program-image program-image-right">
+            <img src={imageRight} alt={`${title} right`} />
+          </div>
         )}
       </div>
-
-      {imageRight && (
-        <div className="program-image program-image-right">
-          <img src={imageRight} alt={`${title} right`} />
-        </div>
-      )}
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 
 const Programs = () => {
@@ -86,8 +130,8 @@ const Programs = () => {
     <div className="programs-page">
       <div className="esa-note">
         <p>
-          <strong>Note:</strong> ESA accepted for all programs. Contact Laurie Brimhall if you need a
-          receipt, ESA credentials, or more information.
+          <strong>Note:</strong> ESA vendor. Contact Laurie Brimhall if you need an
+          invoice for ESA Payment.
         </p>
       </div>
 
@@ -171,19 +215,27 @@ const Programs = () => {
             for updates!
           </>
         }
-        dates={[
-          'Session 1: June 8–10, 2026',
-          'Session 2: June 23–25, 2026',
-          'Session 3: June 29–July 1, 2026',
-          'Morning Camp: 7:30 AM–11:30 AM ($150)',
-          'Afternoon Camp: 1:00 PM–5:00 PM ($150)',
-          'Full Day Camp: 7:30 AM–5:00 PM ($340)',
-        ]}
+        dates={{
+          bullets: [
+            'Session 1: June 8–10, 2026',
+            'Session 2: June 23–25, 2026',
+            'Session 3: June 29–July 1, 2026',
+            'Session 4: July 6–July 8, 2026',
+            'Session 5: July 13–July 15, 2026',
+          ],
+          lines: ['Each session includes:'],
+          subBullets: [
+            'Morning Camp: 7:30 AM–11:30 AM ($150)',
+            'Afternoon Camp: 1:00 PM–5:00 PM ($150)',
+            'Full Day Camp: 7:30 AM–5:00 PM ($340)',
+          ],
+        }}
         registrationAndPayment={[
           "Registration begins February 1, 2026",
           "Text Laurie Brimhall at (480) 518-5662 to register",
-          "A $50 nonrefundable fee is due at registration (applied toward camp fee)",
+          "A $50 nonrefundable downpayment is due at registration (applied toward camp fee)",
           "Remaing balence due by May 1, 2026",
+          "Venmo, Zelle, Cash, and ESA accepted",
           "Liabiltiy Waiver must be signed before participation",
         ]}
         whatToBring={[
@@ -205,10 +257,27 @@ const Programs = () => {
         tagline="After School Pony Pals — Ride, learn, and explore with friends!"
         description="After School Pony Pals is a fun and educational program that meets each week. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
         dates={[
-          'Mondays from 4:00pm to 6:00pm - $150 per month (currently full)',
-          'Tuesdays and Thursdays from 4:00pm to 6:00pm - $300 per month (currently full)',
-          'In the event of inclement weather, there will be unmounted horsemanship learning activities',
-        ]}
+          <li key="mon">Mondays 4:00 pm - 6:00 pm</li>,
+          <li key="mon-1" className="sub-date"> August - May</li>,
+          <li key="mon-2" className="sub-date"> 4 classes per month</li>,
+          <li key="mon-3" className="sub-date"> $150 per month</li>,
+          <li key="mon-4" className="sub-date"> limited availability</li>,
+
+          <li key="tues" style={{ marginTop: '1em' }}>Tuesdays 4:00 pm - 6:00 pm</li>,
+          <li key="tues-1" className="sub-date"> August - May</li>,
+          <li key="tues-2" className="sub-date"> 4 classes per month</li>,
+          <li key="tues-3" className="sub-date"> $150 per month</li>,
+          <li key="tues-4" className="sub-date"> limited availability</li>,
+
+          <li key="wed" style={{ marginTop: '1em' }}>Thursdays 4:00 pm - 6:00 pm</li>,
+          <li key="wed-1" className="sub-date"> August - May</li>,
+          <li key="wed-2" className="sub-date">- 4 classes per month</li>,
+          <li key="wed-3" className="sub-date">- $150 per month</li>,
+          <li key="wed-4" className="sub-date">- limited availability</li>,
+
+          <li key="adv" style={{ marginTop: '1em' }}>In the event of inclement weather, there will be unmounted horsemanship learning activities</li>
+
+  ]}
         whatToBring={[
           'Long pants (jeans recommended)',
           'Closed-toe shoes (boots preferred)',
