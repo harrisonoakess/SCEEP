@@ -217,9 +217,9 @@ const Programs = () => {
         }
         dates={{
           bullets: [
-            'Session 1: June 8–10, 2026',
-            'Session 2: June 23–25, 2026',
-            'Session 3: June 29–July 1, 2026',
+            'Session 1: June 8–10, 2026 (FULL)',
+            'Session 2: June 23–25, 2026 (FULL)',
+            'Session 3: June 29–July 1, 2026 (FULL)',
             'Session 4: July 6–July 8, 2026',
             'Session 5: July 13–July 15, 2026',
           ],
