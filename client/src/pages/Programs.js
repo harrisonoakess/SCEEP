@@ -234,7 +234,7 @@ const Programs = () => {
           "Registration begins February 1, 2026",
           "Text Laurie Brimhall at (480) 518-5662 to register",
           "A $50 nonrefundable downpayment is due at registration (applied toward camp fee)",
-          "Remaing balence due by May 1, 2026",
+          "Remaing balance due by May 1, 2026",
           "Venmo, Zelle, Cash, and ESA accepted",
           "Liabiltiy Waiver must be signed before participation",
         ]}
@@ -253,7 +253,7 @@ const Programs = () => {
 
       <ProgramSection
         id="pony-pals"
-        title="After School Pony Pals"
+        title="Afternoon Pony Pals"
         tagline="After School Pony Pals — Ride, learn, and explore with friends!"
         description="After School Pony Pals is a fun and educational program that meets each week. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
         dates={[
