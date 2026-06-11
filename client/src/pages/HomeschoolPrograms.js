@@ -77,11 +77,11 @@ const HomeschoolPrograms = () => {
   id="farm-school"
   title="Farm School Classes"
   tagline="Real farm experiences for ages 5–16"
-  description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Kryi Wood"
+  description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Tansey Hall"
   dates={[
   <li key="fs-meets" className="sub-date">- Classes meet 4 times per month</li>,
   <li key="fs-fee" className="sub-date">- Class fee: $80 per month</li>,
-  <li key="fs-supply" className="sub-date">- Supply fee: $30 (due at registration, nonrefundable)</li>,
+  <li key="fs-supply" className="sub-date">- Supply fee: $40 (due at registration, nonrefundable)</li>,
   <li key="fs-esa" className="sub-date">- ESA accepted for all programs</li>,
 
   <li key="fs-mon-5-9" className="farm-school-time-row farm-school-day-start">

@@ -141,16 +141,8 @@ const Programs = () => {
         tagline="Saddle up and start your horse journey—fun for all ages!"
         description="Spend a fun-filled 3 hours at the farm getting to know our amazing horses! This hands-on experience includes a riding lesson, horse care activities, and plenty of time to connect with the animals in a relaxed, supportive environment. Whether you're new to horses or just want more time in the barn, 'Day at the Farm' is a perfect way to learn, explore, and enjoy the magic of horses. This program is geared for ages five and older."
         dates={[
-          'January 10, 2026',
-          'January 24, 2026',
-          'February 7, 2026',
-          'February 28, 2026',
-          'March 21, 2026',
-          'March 28, 2026',
-          'April 11, 2026',
-          'April 18, 2026',
-          'May 9, 2026',
-          'May 16, 2026',
+          'Fall dates coming soon',
+          '\t',
           'Each day is from 10:00 AM - 1:00 PM and costs $50 per day',
           'Classes located in Snowflake, AZ',
           'ESA accepted',
@@ -220,8 +212,9 @@ const Programs = () => {
             'Session 1: June 8–10, 2026 (FULL)',
             'Session 2: June 23–25, 2026 (FULL)',
             'Session 3: June 29–July 1, 2026 (FULL)',
-            'Session 4: July 6–July 8, 2026',
-            'Session 5: July 13–July 15, 2026',
+            'Session 4: July 6–July 8, 2026 (FULL)',
+            'Session 5: July 13–July 15, 2026 (FULL)',
+            'Contact Laurie Brimhall at (480) 518-5662 to be put on a waiting list',
           ],
           lines: ['Each session includes:'],
           subBullets: [
@@ -257,22 +250,17 @@ const Programs = () => {
         tagline="After School Pony Pals — Ride, learn, and explore with friends!"
         description="After School Pony Pals is a fun and educational program that meets each week. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
         dates={[
-          <li key="mon">Mondays 4:00 pm - 6:00 pm</li>,
-          <li key="mon-1" className="sub-date"> August - May</li>,
-          <li key="mon-2" className="sub-date"> 4 classes per month</li>,
-          <li key="mon-3" className="sub-date"> $150 per month</li>,
-          <li key="mon-4" className="sub-date"> limited availability</li>,
 
           <li key="tues" style={{ marginTop: '1em' }}>Tuesdays 4:00 pm - 6:00 pm</li>,
           <li key="tues-1" className="sub-date"> August - May</li>,
           <li key="tues-2" className="sub-date"> 4 classes per month</li>,
-          <li key="tues-3" className="sub-date"> $150 per month</li>,
+          <li key="tues-3" className="sub-date"> $200 per month</li>,
           <li key="tues-4" className="sub-date"> limited availability</li>,
 
           <li key="wed" style={{ marginTop: '1em' }}>Thursdays 4:00 pm - 6:00 pm</li>,
           <li key="wed-1" className="sub-date"> August - May</li>,
           <li key="wed-2" className="sub-date">- 4 classes per month</li>,
-          <li key="wed-3" className="sub-date">- $150 per month</li>,
+          <li key="wed-3" className="sub-date">- $200 per month</li>,
           <li key="wed-4" className="sub-date">- limited availability</li>,
 
           <li key="adv" style={{ marginTop: '1em' }}>In the event of inclement weather, there will be unmounted horsemanship learning activities</li>
