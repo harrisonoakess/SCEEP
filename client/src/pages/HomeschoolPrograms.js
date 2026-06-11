@@ -76,7 +76,7 @@ const HomeschoolPrograms = () => {
 <ProgramSection
   id="farm-school"
   title="Farm School Classes"
-  tagline="Real farm experiences for ages 5–8"
+  tagline="Real farm experiences for ages 5–16"
   description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Kryi Wood"
   dates={[
   <li key="fs-meets" className="sub-date">- Classes meet 4 times per month</li>,
@@ -84,8 +84,20 @@ const HomeschoolPrograms = () => {
   <li key="fs-supply" className="sub-date">- Supply fee: $30 (due at registration, nonrefundable)</li>,
   <li key="fs-esa" className="sub-date">- ESA accepted for all programs</li>,
 
-  <li key="fs-mon" style={{ marginTop: '1em' }}>Mondays: 1:00 pm – 3:00 pm</li>,
-  <li key="fs-wed">Wednesdays: 1:00 pm – 3:00 pm</li>,
+  <li key="fs-mon-5-9" className="farm-school-time-row farm-school-day-start">
+    <span className="farm-school-day">Mondays:</span>
+    <span>1:00 pm - 3:00 pm (Ages 5-9)</span>
+  </li>,
+  <li key="fs-mon-10-16" className="farm-school-time-row farm-school-time-only">
+    <span>1:00 pm - 3:00 pm (Ages 10-16)</span>
+  </li>,
+  <li key="fs-wed-5-9" className="farm-school-time-row farm-school-day-start">
+    <span className="farm-school-day">Wednesdays:</span>
+    <span>1:00 pm - 3:00 pm (Ages 5-9)</span>
+  </li>,
+  <li key="fs-wed-10-16" className="farm-school-time-row farm-school-time-only">
+    <span>1:00 pm - 3:00 pm (Ages 10-16)</span>
+  </li>,
 
   <li key="fs-register" style={{ marginTop: '1em' }}>
     <strong>To register:</strong> Text Laurie Brimhall @ 480-518-5662 with the participant&apos;s name, age, and class request.

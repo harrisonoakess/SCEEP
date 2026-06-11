@@ -137,3 +137,29 @@
   font-size: 0.95rem;
   color: #555;
 }
+
+.program-details ul.program-dates .farm-school-time-row {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  column-gap: 0.25rem;
+  list-style-type: none;
+  padding-left: 0;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.program-details ul.program-dates .farm-school-day-start {
+  margin-top: 1em;
+}
+
+.program-details ul.program-dates .farm-school-time-only {
+  margin-top: -8px;
+}
+
+.program-details ul.program-dates .farm-school-time-only span {
+  grid-column: 2;
+}
+
+.farm-school-day {
+  font-weight: 600;
+}

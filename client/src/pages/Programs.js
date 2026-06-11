@@ -288,15 +288,27 @@ const Programs = () => {
             <ProgramSection
         id="farm-school"
         title="Farm School Classes"
-        tagline="Real farm experiences for ages 5–8"
-        description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Kryi Wood."
+        tagline="Real farm experiences for ages 5–16"
+        description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Tansey Hall."
         dates={[
           'Classes meet 4 times per month',
           'Class fee: $80 per month',
           'Supply fee: $40 (due at registration, nonrefundable)',
           'ESA accepted for all programs',
-          'Mondays: 1:00 PM – 3:00 PM',
-          'Wednesdays: 1:00 PM – 3:00 PM',
+          <li key="fs-mon-5-9" className="farm-school-time-row farm-school-day-start">
+            <span className="farm-school-day">Mondays:</span>
+            <span>1:00 PM - 3:00 PM (Ages 5-9)</span>
+          </li>,
+          <li key="fs-mon-10-16" className="farm-school-time-row farm-school-time-only">
+            <span>1:00 PM - 3:00 PM (Ages 10-16)</span>
+          </li>,
+          <li key="fs-wed-5-9" className="farm-school-time-row farm-school-day-start">
+            <span className="farm-school-day">Wednesdays:</span>
+            <span>1:00 PM - 3:00 PM (Ages 5-9)</span>
+          </li>,
+          <li key="fs-wed-10-16" className="farm-school-time-row farm-school-time-only">
+            <span>1:00 PM - 3:00 PM (Ages 10-16)</span>
+          </li>,
           "To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.",
           'Located in Snowflake, Arizona',
         ]}
