@@ -293,7 +293,7 @@ const Programs = () => {
         dates={[
           'Classes meet 4 times per month',
           'Class fee: $80 per month',
-          'Supply fee: $30 (due at registration, nonrefundable)',
+          'Supply fee: $40 (due at registration, nonrefundable)',
           'ESA accepted for all programs',
           'Mondays: 1:00 PM – 3:00 PM',
           'Wednesdays: 1:00 PM – 3:00 PM',
