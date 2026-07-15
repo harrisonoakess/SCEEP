@@ -307,6 +307,27 @@ const Programs = () => {
         ]}
       />
 
+      <ProgramSection
+        id="farm-centered-preschool"
+        title="Little Farmers Preschool"
+        tagline="A farm-centered preschool for 4 & 5-year-olds"
+        description="Little Farmers Preschool combines hands-on farm experiences with early learning to help young children build confidence, curiosity, and a love for learning. This program is geared for ages four and five."
+        dates={[
+          'Tuesdays 1:00 PM - 3:00 PM',
+          'Classes meet 4 times per month',
+          'Class fee: $80 per month',
+          'Supply fee: $40 (due at registration, nonrefundable)',
+          'ESA accepted for all programs',
+          'To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.',
+          'Located in Snowflake, Arizona',
+        ]}
+        whatToBring={[
+          'Closed-toe shoes',
+          'Water bottle',
+          'Dress for the weather',
+        ]}
+      />
+
 
       <ProgramSection
         id="dirt-road-riders"

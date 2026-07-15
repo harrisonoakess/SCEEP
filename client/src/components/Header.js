@@ -40,6 +40,7 @@ function Header() {
 
                 {/* Farm School on Programs page */}
                 <Link to="/programs#farm-school">Farm School Classes</Link>
+                <Link to="/programs#farm-centered-preschool">Little Farmers Preschool</Link>
               </div>
             </li>
 
