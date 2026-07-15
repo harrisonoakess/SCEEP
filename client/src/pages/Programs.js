@@ -11,6 +11,7 @@ const ProgramSection = ({
   dates,
   registrationAndPayment,
   whatToBring,
+  childWillEnjoy,
   imageLeft,
   imageRight,
 }) => {
@@ -74,6 +75,17 @@ const ProgramSection = ({
           {tagline && <p className="program-tagline">{tagline}</p>}
           <p>{description}</p>
 
+          {childWillEnjoy && (
+            <>
+              <h3>Your Child Will Enjoy</h3>
+              <ul>
+                {childWillEnjoy.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
           {dates && (
             <>
               <h3>Dates & Times</h3>
@@ -136,6 +148,36 @@ const Programs = () => {
       </div>
 
       <ProgramSection
+        id="pony-pals"
+        title="Afternoon Pony Pals"
+        tagline="After School Pony Pals — Ride, learn, and explore with friends!"
+        description="After School Pony Pals is a fun and educational program that meets each week. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
+        dates={[
+
+          <li key="tues" style={{ marginTop: '1em' }}>Tuesdays 4:00 pm - 6:00 pm</li>,
+          <li key="tues-1" className="sub-date"> August - May</li>,
+          <li key="tues-2" className="sub-date"> 4 classes per month</li>,
+          <li key="tues-3" className="sub-date"> $200 per month</li>,
+          <li key="tues-4" className="sub-date"> limited availability</li>,
+
+          <li key="wed" style={{ marginTop: '1em' }}>Thursdays 4:00 pm - 6:00 pm</li>,
+          <li key="wed-1" className="sub-date"> August - May</li>,
+          <li key="wed-2" className="sub-date">- 4 classes per month</li>,
+          <li key="wed-3" className="sub-date">- $200 per month</li>,
+          <li key="wed-4" className="sub-date">- limited availability</li>,
+
+          <li key="adv" style={{ marginTop: '1em' }}>In the event of inclement weather, there will be unmounted horsemanship learning activities</li>
+
+  ]}
+        whatToBring={[
+          'Long pants (jeans recommended)',
+          'Closed-toe shoes (boots preferred)',
+          'Water bottle',
+          'Dress for the weather',
+        ]}
+      />
+
+      <ProgramSection
         id="day-at-the-farm"
         title="Day at the Farm with Horses"
         tagline="Saddle up and start your horse journey—fun for all ages!"
@@ -154,6 +196,84 @@ const Programs = () => {
           'Closed-toe shoes (boots preferred)',
           'Water bottle',
           'Sunscreen and hat',
+          'Dress for the weather',
+        ]}
+      />
+
+      <ProgramSection
+        id="dirt-road-riders"
+        title="Dirt Road Riders"
+        tagline="Dirt Road Riders: Learning, leading, lifting each other."
+        description="Dirt Road Riders is a team of dedicated youth who support and encourage fellow students on their horsemanship journey. Many of our members participate actively in the horse 4-H program and bring valuable experience, leadership, and a passion for helping others learn and grow. Whether lending a hand in the barn, guiding new riders, or leading by example in the arena, Dirt Road Riders are committed to building a strong, supportive, and fun equestrian community."
+      />
+
+      <ProgramSection
+        id="equine-apprenticeship"
+        title="Equine Apprenticeship Program"
+        tagline="Train hard. Care deeply. Ride smart."
+        description="The Silver Creek Equine Apprenticeship Program will develop the next generation of horse professionals and passionate equestrians through immersive, hands-on experience. Participants gain in-depth education in all facets of horsemanship—including riding, horse care, stable management, and leadership—within a real-world, supportive learning environment. The program fosters responsibility, confidence, and a lifelong commitment to growth and excellence in equine care."
+        dates={['Contact us for program details and application process']}
+      />
+
+      <ProgramSection
+        id="farm-school"
+        title="Farm School Classes"
+        tagline="Real farm experiences for ages 5–16"
+        description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Tansey Hall."
+        dates={[
+          'Classes meet 4 times per month',
+          'Class fee: $80 per month',
+          'Supply fee: $40 (due at registration, nonrefundable)',
+          'ESA accepted for all programs',
+          <li key="fs-mon-5-9" className="farm-school-time-row farm-school-day-start">
+            <span className="farm-school-day">Mondays:</span>
+            <span>1:00 PM - 3:00 PM (Ages 5-9)</span>
+          </li>,
+          <li key="fs-mon-10-16" className="farm-school-time-row farm-school-time-only">
+            <span>1:00 PM - 3:00 PM (Ages 10-16)</span>
+          </li>,
+          <li key="fs-wed-5-9" className="farm-school-time-row farm-school-day-start">
+            <span className="farm-school-day">Wednesdays:</span>
+            <span>1:00 PM - 3:00 PM (Ages 5-9)</span>
+          </li>,
+          <li key="fs-wed-10-16" className="farm-school-time-row farm-school-time-only">
+            <span>1:00 PM - 3:00 PM (Ages 10-16)</span>
+          </li>,
+          "To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.",
+          'Located in Snowflake, Arizona',
+        ]}
+        whatToBring={[
+          'Closed-toe shoes',
+          'Water bottle',
+          'Dress for the weather',
+        ]}
+      />
+
+      <ProgramSection
+        id="farm-centered-preschool"
+        title="Little Farmers Preschool"
+        tagline="A farm-centered preschool for 4 & 5-year-olds"
+        description="Little Farmers Preschool combines hands-on farm experiences with early learning to help young children build confidence, curiosity, and a love for learning. This program is geared for ages four and five."
+        childWillEnjoy={[
+          'Hands-on animal care and farm chores',
+          'Letter and number recognition',
+          'Gardening and nature exploration',
+          'Sensory play and hands-on learning',
+          'Songs, stories, and creative play',
+          'Making new friends and building social skills',
+        ]}
+        dates={[
+          'Tuesdays 1:00 PM - 3:00 PM',
+          'Classes meet 4 times per month',
+          'Class fee: $80 per month',
+          'Supply fee: $40 (due at registration, nonrefundable)',
+          'ESA accepted for all programs',
+          'To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.',
+          'Located in Snowflake, Arizona',
+        ]}
+        whatToBring={[
+          'Closed-toe shoes',
+          'Water bottle',
           'Dress for the weather',
         ]}
       />
@@ -242,106 +362,6 @@ const Programs = () => {
           'Sun block',
           'Please label everything!',
         ]}
-      />
-
-      <ProgramSection
-        id="pony-pals"
-        title="Afternoon Pony Pals"
-        tagline="After School Pony Pals — Ride, learn, and explore with friends!"
-        description="After School Pony Pals is a fun and educational program that meets each week. This is a perfect program for young horse lovers who want to deepen their understanding and skills. Each participant is assigned their own horse to care for and ride during the session. Activities include both mounted and unmounted learning including riding lessons, trail rides, grooming, feeding, stall cleaning, and groundwork. Pony Pals helps build confidence, responsibility, and a strong bond between rider and horse in a supportive and hands-on environment."
-        dates={[
-
-          <li key="tues" style={{ marginTop: '1em' }}>Tuesdays 4:00 pm - 6:00 pm</li>,
-          <li key="tues-1" className="sub-date"> August - May</li>,
-          <li key="tues-2" className="sub-date"> 4 classes per month</li>,
-          <li key="tues-3" className="sub-date"> $200 per month</li>,
-          <li key="tues-4" className="sub-date"> limited availability</li>,
-
-          <li key="wed" style={{ marginTop: '1em' }}>Thursdays 4:00 pm - 6:00 pm</li>,
-          <li key="wed-1" className="sub-date"> August - May</li>,
-          <li key="wed-2" className="sub-date">- 4 classes per month</li>,
-          <li key="wed-3" className="sub-date">- $200 per month</li>,
-          <li key="wed-4" className="sub-date">- limited availability</li>,
-
-          <li key="adv" style={{ marginTop: '1em' }}>In the event of inclement weather, there will be unmounted horsemanship learning activities</li>
-
-  ]}
-        whatToBring={[
-          'Long pants (jeans recommended)',
-          'Closed-toe shoes (boots preferred)',
-          'Water bottle',
-          'Dress for the weather',
-        ]}
-      />
-            <ProgramSection
-        id="farm-school"
-        title="Farm School Classes"
-        tagline="Real farm experiences for ages 5–16"
-        description="Give your child the chance to learn, grow, and explore through real farm experiences! Our Farm School classes blend animal care, gardening, literacy, science, and creativity into a fun and engaging outdoor learning environment. Instructors: Kari Whipple and Tansey Hall."
-        dates={[
-          'Classes meet 4 times per month',
-          'Class fee: $80 per month',
-          'Supply fee: $40 (due at registration, nonrefundable)',
-          'ESA accepted for all programs',
-          <li key="fs-mon-5-9" className="farm-school-time-row farm-school-day-start">
-            <span className="farm-school-day">Mondays:</span>
-            <span>1:00 PM - 3:00 PM (Ages 5-9)</span>
-          </li>,
-          <li key="fs-mon-10-16" className="farm-school-time-row farm-school-time-only">
-            <span>1:00 PM - 3:00 PM (Ages 10-16)</span>
-          </li>,
-          <li key="fs-wed-5-9" className="farm-school-time-row farm-school-day-start">
-            <span className="farm-school-day">Wednesdays:</span>
-            <span>1:00 PM - 3:00 PM (Ages 5-9)</span>
-          </li>,
-          <li key="fs-wed-10-16" className="farm-school-time-row farm-school-time-only">
-            <span>1:00 PM - 3:00 PM (Ages 10-16)</span>
-          </li>,
-          "To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.",
-          'Located in Snowflake, Arizona',
-        ]}
-        whatToBring={[
-          'Closed-toe shoes',
-          'Water bottle',
-          'Dress for the weather',
-        ]}
-      />
-
-      <ProgramSection
-        id="farm-centered-preschool"
-        title="Little Farmers Preschool"
-        tagline="A farm-centered preschool for 4 & 5-year-olds"
-        description="Little Farmers Preschool combines hands-on farm experiences with early learning to help young children build confidence, curiosity, and a love for learning. This program is geared for ages four and five."
-        dates={[
-          'Tuesdays 1:00 PM - 3:00 PM',
-          'Classes meet 4 times per month',
-          'Class fee: $80 per month',
-          'Supply fee: $40 (due at registration, nonrefundable)',
-          'ESA accepted for all programs',
-          'To register: Text Laurie Brimhall at (480) 518-5662 with the participant’s name, age, and class request.',
-          'Located in Snowflake, Arizona',
-        ]}
-        whatToBring={[
-          'Closed-toe shoes',
-          'Water bottle',
-          'Dress for the weather',
-        ]}
-      />
-
-
-      <ProgramSection
-        id="dirt-road-riders"
-        title="Dirt Road Riders"
-        tagline="Dirt Road Riders: Learning, leading, lifting each other."
-        description="Dirt Road Riders is a team of dedicated youth who support and encourage fellow students on their horsemanship journey. Many of our members participate actively in the horse 4-H program and bring valuable experience, leadership, and a passion for helping others learn and grow. Whether lending a hand in the barn, guiding new riders, or leading by example in the arena, Dirt Road Riders are committed to building a strong, supportive, and fun equestrian community."
-      />
-
-      <ProgramSection
-        id="equine-apprenticeship"
-        title="Equine Apprenticeship Program"
-        tagline="Train hard. Care deeply. Ride smart."
-        description="The Silver Creek Equine Apprenticeship Program will develop the next generation of horse professionals and passionate equestrians through immersive, hands-on experience. Participants gain in-depth education in all facets of horsemanship—including riding, horse care, stable management, and leadership—within a real-world, supportive learning environment. The program fosters responsibility, confidence, and a lifelong commitment to growth and excellence in equine care."
-        dates={['Contact us for program details and application process']}
       />
     </div>
   );
