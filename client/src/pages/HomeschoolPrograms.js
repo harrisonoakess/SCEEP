@@ -128,7 +128,7 @@ const HomeschoolPrograms = () => {
               Pony Pals helps build confidence, responsibility, and a strong bond between rider and
               horse in a supportive and hands-on environment. Geared for ages 8 and older"
   dates={[
-    <li key="mon">Mondays 10:30 am - 12:30 pm</li>,
+    <li key="mon">Mondays 10:00 am - 12:00 pm</li>,
     <li key="mon-1" className="sub-date">- August - May</li>,
     <li key="mon-2" className="sub-date">- 4 classes per month</li>,
     <li key="mon-3" className="sub-date">- $200 per month</li>,
