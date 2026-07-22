@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './Programs.css'; // reuse same styles
 
 const ProgramSection = ({ id, title, tagline, description, dates, whatToBring }) => (
@@ -43,6 +44,10 @@ const HomeschoolPrograms = () => {
 
   return (
     <div className="programs-page">
+      <SEO
+        title="Homeschool Programs | Silver Creek Equestrian Education Program"
+        description="Homeschool horse programs in Snowflake, AZ: Farm School Classes and Homeschool Pony Pals offer hands-on horsemanship, farm chores, and riding lessons for homeschool students."
+      />
       <div className="esa-note">
         <p><strong>Note:</strong> ESA vendor. Contact Laurie Brimhall if you need an
           invoice for ESA Payment.</p>

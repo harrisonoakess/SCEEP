@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './About.css';
 
 import LaurieBrimhall from '../assets/images/aboutPageProfiles/laurieBrimhall1.jpg';
@@ -165,6 +166,10 @@ const About = () => {
 
   return (
     <div className="about-page">
+      <SEO
+        title="About | Silver Creek Equestrian Education Program"
+        description="Meet the instructors, Dirt Road Riders youth team, and horses behind Silver Creek Equestrian Education Program in Snowflake, Arizona."
+      />
       {/* Team Section */}
       <section className="staff-section" id="meet-the-team">
         <h2>Meet Our Team</h2>

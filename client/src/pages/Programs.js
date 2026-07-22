@@ -1,6 +1,7 @@
 // src/pages/Programs.jsx (or wherever your Programs file lives)
 import React, { useEffect } from 'react';
 import waiverDoc from '../assets/waivers/RELEASE AND WAIVER OF LIABILITY.docx.pdf';
+import SEO from '../components/SEO';
 import './Programs.css';
 
 const ProgramSection = ({
@@ -140,6 +141,10 @@ const Programs = () => {
 
   return (
     <div className="programs-page">
+      <SEO
+        title="Programs | Silver Creek Equestrian Education Program"
+        description="Explore SCEEP's horse programs: Pony Pals, Day at the Farm, Summer Horse Camp, Farm School, Little Farmers Preschool, private lessons, and equine apprenticeships in Snowflake, AZ."
+      />
       <div className="esa-note">
         <p>
           <strong>Note:</strong> ESA vendor. Contact Laurie Brimhall if you need an

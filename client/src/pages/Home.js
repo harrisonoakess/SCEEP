@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import SEO from '../components/SEO';
 import './Home.css';
 
 
@@ -61,6 +62,10 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      <SEO
+        title="Silver Creek Equestrian Education Program"
+        description="Silver Creek Equestrian Education Program (SCEEP) offers horseback riding lessons, homeschool classes, and summer horse camps for kids and families in Snowflake, Arizona."
+      />
       {/* The Header is already included in App.js, so we don't need to add it here */}
       <section className="carousel-section">
         <Slider {...settings}>
